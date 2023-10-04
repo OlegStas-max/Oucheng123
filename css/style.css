@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'KalamehWeb';
+    src: url('KalamehWeb_Black.ttf') format('ttf'),
+         url('KalamehWeb_Bold.ttf') format('ttf'),
+         url('KalamehWeb_Regular.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Bahamas';
+    src: url('BAHAMASN.ttf') format('ttf'),
+}
+
+body {
+    background-color: #EBDCD9;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #666362;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom-left-radius: 50% 20px;
+    border-bottom-right-radius: 50% 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.logo {
+    font-family: "Bahamas Normal", sans-serif;
+    font-size: 30px;
+    color: #DCCCC8;
+    text-align: center;
+    letter-spacing: 10px;
+}
+
+.content {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.text-phrases {
+    font-family: "KalamehWeb", sans-serif;
+    font-size: 35px;
+    color: #666362;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+    max-width: none;
+    border: 2px solid #666362;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .content {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+    
+    img {
+        width: 30%;
+        margin: 10px;
+        max-width: 100%;
+        box-sizing: border-box;
+        border: 2px solid #666362;
+        cursor: pointer;
+    }
+    .text-phrases {
+        font-family: "KalamehWeb", sans-serif;
+        font-size: 45px;
+        font-weight: bold;
+        margin: 20px 0;
+    }
+}
+
+button {
+    background-color: #666362;
+    color: #EBDCD9;
+    font-family: "KalamehWeb", sans-serif;
+    border: none;
+    padding: 10px 20px;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 30px;
+    width: 350px;
+}
+
+button:hover {
+    background-color: #EBDCD9;
+    color: #666362;
+    border: 2px solid #666362 ;
+}
+
+.animate-text1, .animate-text2, .animate-button, .animate-image1, .animate-image2, .animate-image3 {
+    opacity: 0;
+    transform: translateY(-10px); /* Початкова позиція: елементи позиціоновані вище */
+}
+
+.animate-text1 {
+    animation: slide-in 0.5s ease-out 0.3s forwards;
+}
+
+.animate-text2 {
+    animation: slide-in 0.5s ease-out 0.6s forwards;
+}
+
+.animate-button {
+    animation: slide-in 0.5s ease-out 1.5s forwards;
+}
+
+.animate-image1 {
+    animation: slide-in 0.5s ease-out 2.2s forwards;
+}
+.animate-image2 {
+    animation: slide-in 0.5s ease-out 2.5s forwards;
+}
+.animate-image3 {
+    animation: slide-in 0.5s ease-out 2.8s forwards;
+}
+
+@keyframes slide-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
