@@ -1,15 +1,3 @@
-@font-face {
-    font-family: 'KalamehWeb';
-    src: url('fonts/KalamehWeb_Black.ttf') format('ttf'),
-         url('fonts/KalamehWeb_Bold.ttf') format('ttf'),
-         url('fonts/KalamehWeb_Regular.ttf') format('ttf');
-}
-
-@font-face {
-    font-family: 'Bahamas';
-    src: url('fonts/BAHAMASN.ttf') format('ttf'),
-}
-
 body {
     background-color: #EBDCD9;
     margin: 0;
