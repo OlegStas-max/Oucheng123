@@ -212,7 +212,7 @@ body {
         grid-template-columns: repeat(1, 1fr);
         gap: 10px;
         margin-top: 20px;
-        margin-top: calc(4/5 * 100vh);
+        margin-top: calc(8.5/10 * 100vh);
     }
     .second-image {
         opacity: 0;
@@ -233,7 +233,7 @@ body {
     }
 
     button {
-        top: 50vh;
+        top: 55vh;
     }
 
 }
