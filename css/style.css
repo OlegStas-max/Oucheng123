@@ -200,10 +200,12 @@ body {
         margin-top: calc(2/3 * 100vh);
     }
     .second-image {
+        /* width: 1600px;
+        height: 1080px;
+        transform: translateX(-150px) translateY(-100px); */
         opacity: 0;
     }
+
 }
-
-
 
 
