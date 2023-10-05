@@ -220,6 +220,7 @@ body {
 
     .th-image {
         opacity: 1;
+        margin-top: calc(1/5 * 100vh);
     }
 
     .text1 {            
@@ -232,7 +233,7 @@ body {
     }
 
     button {
-    top: 50vh;
+        top: 50vh;
     }
 
 }
