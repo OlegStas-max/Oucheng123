@@ -3,54 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OUCHENG</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Анімація шапки</title>
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&family=Exo+2&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
     <style>
-        .text1 {
-            font-family: 'Baloo Bhaijaan 2', cursive;
-            font-weight: 500;
+        .text1 {            
+            color: #fff;
+            font-size: 45px;
         }
-        .text2 {
-            font-family: 'Exo 2', sans-serif;
-            font-weight: 600;
+        .text2 {            
+            color: #aaaaaa;
+            font-size: 25px;
         }
     </style>
-    <header class="header">
-        <div class="container">
-            <h1 class="logo text2">OUCHENG</h1>
-        </div>
+</head>
+<body>
+    <header class="animated-header">
+        <div class="logo-container">
+            <img src="images/logo.gif" alt="logo" class="logo img">
+        </div>        
     </header>
-    
-    <div class="container">
-        <section class="content">
-            <form>
-                <br>
-                <br>
-                <div class="text-phrases animate-text1 text1">
-                    زندگیتو خوش استیل کن
-                </div>
-                <div class="text-phrases animate-text2 text1">
-                    بهترین خودت باش
-                </div>
-                <br>
-                <br>        
-                <div>
-                    <button  class="animate-button text1">الان سفارش بده</button>
-                </div> 
-                <br>
-                <br> 
-                <div>
-                    <img src="images/H3b8183cc1cce47e4aa590ec5c1c908d5B.jpg_960x960.png" alt="Image 1" href="#" class="animate-image1">
-                    <img src="images/Ha51df40342f64cf492ee9e1eda3afb5ek.jpg_960x960.png" alt="Image 2" href="#" class="animate-image2">
-                    <img src="images/H6a445735232b49a2ba65473712b18409u.jpg_960x960.png" alt="Image 3" href="#" class="animate-image3">
-                </div>                                
-            </form>
-        </section>
+    <div class="content-container">
+        <img src="images/H9cf5a068c8164dc89f9d80f12c3ee53.jpg" alt="im" class="second-image">
+        <div class="text-container">
+            <p class="text-left text1 animate-text1">روشنایی همگام با احساسات</p>
+            <p class="text-left text2 animate-text2">خونه ات رو هوشمندانه روشن کن</p>
+        </div>
+        <div>
+            <button  class="animate-button">الان سفارش بده</button>
+        </div> 
+        <div class="image-grid">
+            <div class="image animate-im1">
+                <img src="images/image1.jpg" alt="Image 1" >
+            </div>
+            <div class="image animate-im2">
+                <img src="images/image2.jpg" alt="Image 2">
+            </div>
+            <div class="image animate-im3">
+                <img src="images/image3.jpg" alt="Image 3">
+            </div>
+            <div class="image animate-im4">
+                <img src="images/image4.jpg" alt="Image 4">
+            </div>
+            <div class="image animate-im5">
+                <img src="images/image5.jpg" alt="Image 5">
+            </div>
+            <div class="image animate-im6">
+                <img src="images/image6.jpg" alt="Image 6">
+            </div>
+            <div class="image animate-im7">
+                <img src="images/image7.jpg" alt="Image 7">
+            </div>
+            <div class="image animate-im8">
+                <img src="images/image8.jpg" alt="Image 8">
+            </div>
+            <div class="image animate-im9">
+                <img src="images/image9.jpg" alt="Image 9">
+            </div>
+        </div>
+
     </div>
+    
+    <script src="js/script.js"></script>
 </body>
 </html>
