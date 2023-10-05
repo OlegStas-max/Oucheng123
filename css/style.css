@@ -220,7 +220,7 @@ body {
 
     .th-image {
         opacity: 1;
-        margin-top: calc(1/5 * 100vh);
+        margin-top: 50px;
     }
 
     .text1 {            
