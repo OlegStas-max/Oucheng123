@@ -80,6 +80,7 @@
     height: 200px;
     left: 50%;
     top: 50%;
+    border-radius: 50%;
     animation: logoAnimation2 1s ease-out 0.4s forwards;
 }
 
@@ -465,36 +466,48 @@ body {
     .logo-circle0 {
         width: 230px;
         height: 230px;
+        left: 35vw;
+        top: 40vh;
     }
 
     .logo-circle00 {
         width: 170px;
         height: 170px;
+        left: 65vw;
+        top: 50vh;
     }
 
     .logo-circle000 {
         width: 290px;
         height: 290px;
+        left: 35vw;
+        top: 40vh;
     }
 
     .logo-circle0000 {
         width: 230px;
         height: 230px;
+        left: 65vw;
+        top: 50vh;
     }
 
     .logo-circle00000 {
         width: 375px;
         height: 375px;
+        left: 50vw;
+        top: 70vh;
     }
 
     .im1 {
         width: 300px;
         height: 300px;
+        left: 50vw;
+        top: 70vh;
     }
 
     .text-container0 {   
-        left: 35vw;
-        top: 70vh;
+        left: 65vw;
+        top: 50vh;
         font-size: 20px;
         width: 120px;
         height: auto;
@@ -502,8 +515,8 @@ body {
 
     
     .text-container {    
-        left: 25vw;
-        top: 45vh;
+        left: 35vw;
+        top: 40vh;
         font-size: 30px;
         width: 150px;
         height: auto;
