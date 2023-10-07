@@ -8,7 +8,16 @@
     top: 0;
     left: 0;
     z-index: 100;
-    transition: height 1s ease-in-out;
+    animation: logoAnimat 1s ease-in-out 2.0s forwards;
+}
+
+@keyframes logoAnimat {
+    0% {
+        height: 100vh;
+    }
+    100% {
+        height: 150px;
+    }
 }
 
 .logo-container {
@@ -21,70 +30,67 @@
 .logo-circle {
     opacity: 0;
     position: absolute;
-    width: 10px;
-    height: 10px;
+    width: 300px;
+    height: 300px;
+    left: 50%;
+    top: 50%;
     background-color: #E5EFF7;
     border-radius: 50%;
-    transition: width 1s ease-out, height 1s ease-out;
     animation: logoAnimation 1s ease-out 0.0s forwards;
 }
 
 @keyframes logoAnimation {
     0% {
         opacity: 0;
-        width: 10px;
-        height: 10px;
+        transform: translate(-50%, -50%) scale(0.1);
     }
     100% {
         opacity: 1;
-        width: 300px;
-        height: 300px;
+        transform: translate(-50%, -50%) scale(1);
     }
 }
 
 .logo-circle1 {
     opacity: 0;
     position: absolute;
-    width: 10px;
-    height: 10px;
+    width: 250px;
+    height: 250px;
+    left: 50%;
+    top: 50%;
     background-color: #C2D9EC;
     border-radius: 50%;
-    transition: width 1s ease-out, height 1s ease-out;
     animation: logoAnimation1 1s ease-out 0.2s forwards;
 }
 
 @keyframes logoAnimation1 {
     0% {
         opacity: 0;
-        width: 10px;
-        height: 10px;
+        transform: translate(-50%, -50%) scale(0.1);
     }
     100% {
         opacity: 1;
-        width: 250px;
-        height: 250px;
+        transform: translate(-50%, -50%) scale(1);
     }
 }
 
 .logo-circle2 {
     opacity: 0;
     position: absolute;
-    width: 10px;
-    height: 10px;
-    transition: width 1s ease-out, height 1s ease-out;
+    width: 200px;
+    height: 200px;
+    left: 50%;
+    top: 50%;
     animation: logoAnimation2 1s ease-out 0.4s forwards;
 }
 
 @keyframes logoAnimation2 {
     0% {
         opacity: 0;
-        width: 10px;
-        height: 10px;
+        transform: translate(-50%, -50%) scale(0.1);
     }
     100% {
         opacity: 1;
-        width: 200px;
-        height: 200px;
+        transform: translate(-50%, -50%) scale(1);
     }
 }
 
@@ -368,15 +374,6 @@ body {
         margin-top: 100vh;
     }
 
-    /* .second-image {
-        opacity: 0;
-    }
-
-    .th-image {
-        opacity: 1;
-        margin-top: -500px;
-    } */
-
     button {
         width: 150px;
         height: 150px;
@@ -440,22 +437,76 @@ body {
 
     .th-image {
         opacity: 1;
-        margin-top: -500px;
+        margin-top: -800px;
     }
 
     .logo-circle {
-        width: 100px;
-        height: 100px;
+        width: 180px;
+        height: 180px;
     }
-    
+
     .logo-circle1 {
-        width: 125px;
-        height: 125px;
-    }
-    
-    .logo-circle2 {
         width: 150px;
         height: 150px;
+    }
+
+    .logo-circle2 {
+        width: 120px;
+        height: 120px;
+    }
+
+    button {
+        width: 120px;
+        height: 120px;
+        font-size: 15px;
+        background-color: #000;
+    }
+
+    .logo-circle0 {
+        width: 230px;
+        height: 230px;
+    }
+
+    .logo-circle00 {
+        width: 170px;
+        height: 170px;
+    }
+
+    .logo-circle000 {
+        width: 290px;
+        height: 290px;
+    }
+
+    .logo-circle0000 {
+        width: 230px;
+        height: 230px;
+    }
+
+    .logo-circle00000 {
+        width: 375px;
+        height: 375px;
+    }
+
+    .im1 {
+        width: 300px;
+        height: 300px;
+    }
+
+    .text-container0 {   
+        left: 35vw;
+        top: 70vh;
+        font-size: 20px;
+        width: 120px;
+        height: auto;
+    }
+
+    
+    .text-container {    
+        left: 25vw;
+        top: 45vh;
+        font-size: 30px;
+        width: 150px;
+        height: auto;
     }
 
 }
