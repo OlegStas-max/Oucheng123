@@ -461,7 +461,6 @@ body {
         font-size: 17px;
         left: 63vw;
         top: 75vh;
-        background-color: #000;
     }
 
     .logo-circle0 {
@@ -495,15 +494,15 @@ body {
     .logo-circle00000 {
         width: 320px;
         height: 320px;
-        left: 47vw;
-        top: 75vh;
+        left: 42vw;
+        top: 68vh;
     }
 
     .im1 {
         width: 270px;
         height: 270px;
-        left: 47vw;
-        top: 75vh;
+        left: 42vw;
+        top: 68vh;
     }
 
     .text-container0 {   
