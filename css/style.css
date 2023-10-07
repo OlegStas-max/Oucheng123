@@ -207,7 +207,7 @@
     opacity: 0; 
     position: absolute;
     left: 35vw;
-    top: calc(45vh + 250px);
+    top: calc(45vh + 255px);
     font-family: 'Vazirmatn', sans-serif;
     text-align: center;
     margin: 0;
@@ -236,7 +236,7 @@
     opacity: 0;
     position: absolute;
     left: 25vw;
-    top: 45vh;
+    top: 44vh;
     font-family: 'Vazirmatn', sans-serif;
     text-align: center;
     margin: 0;
