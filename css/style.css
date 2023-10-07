@@ -431,6 +431,11 @@ body {
 
 @media (max-width: 768px) {
 
+    .animated-header {
+        height: 100vh;
+        width: 100vw;
+    }
+
     .second-image {
         opacity: 0;
     }
