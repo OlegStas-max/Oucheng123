@@ -458,8 +458,8 @@ body {
     button {
         width: 120px;
         height: 120px;
-        font-size: 15px;
-        left: 70vw;
+        font-size: 17px;
+        left: 63vw;
         top: 75vh;
     }
 
@@ -492,16 +492,16 @@ body {
     }
 
     .logo-circle00000 {
-        width: 300px;
-        height: 300px;
-        left: 50vw;
+        width: 320px;
+        height: 320px;
+        left: 47vw;
         top: 75vh;
     }
 
     .im1 {
         width: 270px;
         height: 270px;
-        left: 50vw;
+        left: 47vw;
         top: 75vh;
     }
 
