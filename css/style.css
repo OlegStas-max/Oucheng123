@@ -112,7 +112,7 @@
     width: 300px;
     height: 300px;
     left: 35vw;
-    top: 70vh;
+    top: calc(45vh + 200px);
     background-color: #C2D9EC;
     border-radius: 50%;
     animation: logoAnimation0 1s ease-out 2.35s forwards;
