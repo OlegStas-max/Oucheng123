@@ -444,22 +444,18 @@ body {
     }
 
     .logo-circle {
-        width: 80%;
-        height: 80%;
-        transition: width 1s ease-out, height 1s ease-out;
+        width: 100px;
+        height: 100px;
     }
     
     .logo-circle1 {
-        width: 80%;
-        height: 80%;
-        background-color: #000;
-        transition: width 1s ease-out, height 1s ease-out;
+        width: 125px;
+        height: 125px;
     }
     
     .logo-circle2 {
-        width: 80%;
-        height: 80%;
-        transition: width 1s ease-out, height 1s ease-out;
+        width: 150px;
+        height: 150px;
     }
 
 }
