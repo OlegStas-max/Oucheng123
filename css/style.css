@@ -459,56 +459,55 @@ body {
         width: 120px;
         height: 120px;
         font-size: 15px;
-        left: 30vw;
-        top: 90vh;
-        background-color: #000;
-    }
-
-    .logo-circle0 {
-        width: 230px;
-        height: 230px;
-        left: 35vw;
-        top: 35vh;
-    }
-
-    .logo-circle00 {
-        width: 170px;
-        height: 170px;
-        left: 65vw;
-        top: 50vh;
-    }
-
-    .logo-circle000 {
-        width: 290px;
-        height: 290px;
-        left: 35vw;
-        top: 35vh;
-    }
-
-    .logo-circle0000 {
-        width: 230px;
-        height: 230px;
-        left: 65vw;
-        top: 50vh;
-    }
-
-    .logo-circle00000 {
-        width: 375px;
-        height: 375px;
-        left: 50vw;
+        left: 70vw;
         top: 75vh;
     }
 
-    .im1 {
+    .logo-circle0 {
+        width: 200px;
+        height: 200px;
+        left: 35vw;
+        top: 30vh;
+    }
+
+    .logo-circle00 {
+        width: 155px;
+        height: 155px;
+        left: 65vw;
+        top: 47vh;
+    }
+
+    .logo-circle000 {
+        width: 260px;
+        height: 260px;
+        left: 35vw;
+        top: 30vh;
+    }
+
+    .logo-circle0000 {
+        width: 215px;
+        height: 215px;
+        left: 65vw;
+        top: 47vh;
+    }
+
+    .logo-circle00000 {
         width: 300px;
         height: 300px;
         left: 50vw;
         top: 75vh;
     }
 
+    .im1 {
+        width: 270px;
+        height: 270px;
+        left: 50vw;
+        top: 75vh;
+    }
+
     .text-container0 {   
         left: 65vw;
-        top: 50vh;
+        top: 47vh;
         font-size: 20px;
         width: 120px;
         height: auto;
@@ -517,7 +516,7 @@ body {
     
     .text-container {    
         left: 35vw;
-        top: 35vh;
+        top: 30vh;
         font-size: 30px;
         width: 150px;
         height: auto;
