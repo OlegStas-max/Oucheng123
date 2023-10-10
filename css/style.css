@@ -333,7 +333,6 @@ button {
     border: 2px solid #00CDFF;
     width: 350px;
     height: 70px;
-    top: 50px;
     text-align: center;
     z-index: 15;
     position: relative;
@@ -471,12 +470,10 @@ button:hover {
     .text1 {            
         width: 300px;
         font-size: 25px;
-        top: 50px;
     }
     .text2 {    
         width: 300px;
         font-size: 20px;
-        top: 150px;
     }
 
     button {
@@ -488,15 +485,20 @@ button:hover {
 
     .text-container {  
         left: 10%;
+        top: 120px;
     }
 
     .logo {
         display: flex;
         justify-content: center;
         align-items: center;
-        left: 80px;
+        left: 75px;
         width: 180px;
         height: 86px;
         position: relative;
+    }
+
+    .container {
+        max-height: 100px;
     }
 }
