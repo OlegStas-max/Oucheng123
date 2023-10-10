@@ -23,10 +23,10 @@
 
 .logo-circle1 {
     opacity: 0;
-/*     position: absolute; */
+    position: absolute;
     width: 400px;
     height: 400px;
-    left: 50%;
+    left: 50vw;
     top: 40vh;
     background-color: rgba(255, 255, 255, 0.658);
     border-radius: 50%;
@@ -36,10 +36,10 @@
 
 .logo-circle2 {
     opacity: 0;
-/*     position: absolute; */
+    position: absolute;
     width: 400px;
     height: 400px;
-    left: 80%;
+    left: 50vw;
     top: 40vh;
     background-color: rgba(255, 255, 255, 0.658);
     border-radius: 50%;
@@ -49,10 +49,10 @@
 
 .logo-circle3 {
     opacity: 0;
-/*     position: absolute; */
+    position: absolute;
     width: 400px;
     height: 400px;
-    left: 65%;
+    left: 50vw;
     top: calc(40vh + 300px);;
     background-color: rgba(255, 255, 255, 0.658);
     border-radius: 50%;
@@ -62,8 +62,8 @@
 
 .s1s {
     opacity: 0;
-/*     position: absolute;    */
-    left: 68%;
+    position: absolute;   
+    left: 50vw;
     top: calc(40vh + 330px);    
     animation: logoAnimation 1s ease-out 1.0s forwards;
     z-index: 10;
@@ -71,8 +71,8 @@
 
 .s2s {
     opacity: 0;
-/*     position: absolute; */
-    left: 82%;
+    position: absolute;
+    left: 50vw;
     top: 40vh;
     animation: logoAnimation 1s ease-out 0.5s forwards;
     z-index: 11;
@@ -80,8 +80,8 @@
 
 .s3s {
     opacity: 0;
-/*     position: absolute; */
-    left: 53%;
+    position: absolute;
+    left: 50vw;
     top: 40vh;
     animation: logoAnimation 1s ease-out 0.0s forwards;
     z-index: 12;
