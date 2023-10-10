@@ -432,19 +432,22 @@ button:hover {
     .logo-circle1 {
         width: 200px;
         height: 200px;
-        top: 500px;
+        top: 450px;
+        left: 0px;
     }
     
     .logo-circle2 {
         width: 200px;
         height: 200px;
-        top: 500px;
+        top: 450px;
+        left: 100px;
     }
     
     .logo-circle3 {
         width: 200px;
         height: 200px;
-        top: 500px;
+        top: 450px;
+        left: 200px;
     }
     
     .s1s {
@@ -468,30 +471,30 @@ button:hover {
     .text1 {            
         width: 300px;
         font-size: 25px;
-        top: 150px;
+        top: 50px;
     }
     .text2 {    
         width: 300px;
         font-size: 20px;
-        top: 250px;
+        top: 150px;
     }
 
     button {
         font-size: 20px;
         width: 250px;
         height: 50px;
-        top: 350px;
+        top: 200px;
     }
 
     .text-container {  
-        left: 5%;
+        left: 10%;
     }
 
     .logo {
         display: flex;
         justify-content: center;
         align-items: center;
-        left: 30px;
+        left: 80px;
         width: 180px;
         height: 86px;
         position: relative;
