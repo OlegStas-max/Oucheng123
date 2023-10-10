@@ -441,7 +441,7 @@ button:hover {
         width: 200px;
         height: 200px;
         top: 480px;
-        left: 290px;
+        left: 300px;
     }
     
     .logo-circle3 {
@@ -462,7 +462,7 @@ button:hover {
         width: 272px;
         height: 195px;
         top: 480px;
-        left: 330px;
+        left: 335px;
     }
     
     .s3s {
@@ -504,6 +504,6 @@ button:hover {
     }
 
     .container {
-        max-height: 100px;
+        max-height: 80px;
     }
 }
