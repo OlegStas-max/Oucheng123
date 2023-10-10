@@ -438,43 +438,42 @@ button:hover {
         width: 200px;
         height: 200px;
         top: 480px;
-        left: 100px;
+        left: 85px;
     }
     
     .logo-circle2 {
         width: 200px;
         height: 200px;
         top: 480px;
-        left: 300px;
+        left: 285px;
     }
     
     .logo-circle3 {
         width: 200px;
         height: 200px;
         top: 630px;
-        left: 200px;
-        background-color: rgba(55, 55, 55, 0.658);
+        left: 185px;
     }
     
     .s1s {
         width: 204px;
         height: 161px;
         top: 640px;
-        left: 230px;
+        left: 215px;
     }
     
     .s2s {
         width: 272px;
         height: 195px;
         top: 480px;
-        left: 335px;
+        left: 320px;
     }
     
     .s3s {
         width: 280px;
         height: 191px;
         top: 480px;
-        left: 130px;
+        left: 115px;
     }
 
     .text1 {            
@@ -514,11 +513,12 @@ button:hover {
     
     body {
         overflow-x: hidden;
+        width: 100vw;
     }
     
     .image-grid {
-    grid-template-columns: 1fr;
-    gap: 10px;
-    top: -150px;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        top: -150px;
     }
 }
