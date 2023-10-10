@@ -427,6 +427,10 @@ button:hover {
     .text-container {  
         left: 5%;
     }
+
+    body {
+        overflow-x: hidden;
+    }
 }
 
 @media (max-width: 768px) {
@@ -505,5 +509,15 @@ button:hover {
 
     .container {
         max-height: 80px;
+    }
+    
+    body {
+        overflow-x: hidden;
+    }
+    
+    .image-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    top: -150px;
     }
 }
