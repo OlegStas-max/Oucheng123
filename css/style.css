@@ -63,7 +63,7 @@
 .s1s {
     opacity: 0;
     position: absolute;   
-    left: 65vw;
+    left: 68vw;
     top: calc(40vh + 330px);    
     animation: logoAnimation 1s ease-out 1.0s forwards;
     z-index: 10;
@@ -72,7 +72,7 @@
 .s2s {
     opacity: 0;
     position: absolute;
-    left: 80vw;
+    left: 83vw;
     top: 40vh;
     animation: logoAnimation 1s ease-out 0.5s forwards;
     z-index: 11;
@@ -81,7 +81,7 @@
 .s3s {
     opacity: 0;
     position: absolute;
-    left: 50vw;
+    left: 53vw;
     top: 40vh;
     animation: logoAnimation 1s ease-out 0.0s forwards;
     z-index: 12;
