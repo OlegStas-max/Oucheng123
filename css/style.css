@@ -432,47 +432,55 @@ button:hover {
     .logo-circle1 {
         width: 200px;
         height: 200px;
+        top: 500px;
     }
     
     .logo-circle2 {
         width: 200px;
         height: 200px;
+        top: 500px;
     }
     
     .logo-circle3 {
         width: 200px;
         height: 200px;
+        top: 500px;
     }
     
     .s1s {
         width: 326px;
         height: 257px;
+        top: 500px;
     }
     
     .s2s {
         width: 435px;
         height: 313px;
+        top: 500px;
     }
     
     .s3s {
         width: 448px;
         height: 306px;
+        top: 500px;
     }
 
     .text1 {            
         width: 300px;
         font-size: 25px;
+        top: 150px;
     }
     .text2 {    
         width: 300px;
         font-size: 20px;
+        top: 250px;
     }
 
     button {
         font-size: 20px;
         width: 250px;
         height: 50px;
-        top: 50px;
+        top: 350px;
     }
 
     .text-container {  
