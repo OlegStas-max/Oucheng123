@@ -453,18 +453,21 @@ button:hover {
         width: 204px;
         height: 161px;
         top: 500px;
+        left: 230px;
     }
     
     .s2s {
         width: 272px;
         height: 195px;
         top: 500px;
+        left: 3300px;
     }
     
     .s3s {
         width: 280px;
         height: 191px;
         top: 500px;
+        left: 130px;
     }
 
     .text1 {            
