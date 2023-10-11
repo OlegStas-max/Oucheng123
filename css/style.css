@@ -13,6 +13,10 @@
     padding: 20px;
 }
 
+.ccontent-container {
+    max-width: 350px;
+}
+
 .logo {
     display: flex;
     justify-content: center;
@@ -98,14 +102,17 @@
     }
 }
 
-.text1 {            
+.text1, .text2, .text3 {            
     color: #000;
     font-size: 45px;
     text-align: left;
     width: 350px;
     text-shadow: -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white, 2px 2px 0 white;
+    padding: 0;
+    margin: 0;
 }
-.text2 {    
+
+.text4 {    
     color: #fff;
     font-size: 35px;
     text-align: left;
@@ -271,7 +278,7 @@ body {
     background-color: #00CDFF;
 }
 
-.text1, .text2, .animate-button, .animate-im1, .animate-im2, .animate-im3, .animate-im4, .animate-im5, .animate-im6 {
+.text1, .text2, .text3, .text4, .animate-button, .animate-im1, .animate-im2, .animate-im3, .animate-im4, .animate-im5, .animate-im6 {
     opacity: 0;
     transform: translateY(10px);
 }
@@ -284,8 +291,16 @@ body {
     animation: slide-in 0.5s ease-out 1.3s forwards;
 }
 
-.animate-button {
+.text3 {
     animation: slide-in 0.5s ease-out 1.6s forwards;
+}
+
+.text4 {
+    animation: slide-in 0.5s ease-out 1.9s forwards;
+}
+
+.animate-button {
+    animation: slide-in 0.5s ease-out 2.2s forwards;
 }
 
 .animate-im1 {
@@ -408,11 +423,11 @@ button:hover {
         height: 306px;
     }
 
-    .text1 {            
+    .text1, .text2, .text3 {            
         width: 200px;
         font-size: 30px;
     }
-    .text2 {    
+    .text4 {    
         width: 200px;
         font-size: 20px;
     }
@@ -433,54 +448,100 @@ button:hover {
     }
 }
 
+@media (max-height: 850px) {
+
+    .logo-circle1 {
+        width: 300px;
+        height: 300px;
+        left: 55vw;
+        top: 43vh;
+    }
+    
+    .logo-circle2 {
+        width: 300px;
+        height: 300px;
+        left: 75vw;
+        top: 43vh;
+    }
+    
+    .logo-circle3 {
+        width: 300px;
+        height: 300px;
+        left: 65vw;
+        top: calc(40vh + 300px);;
+    }
+    
+    .s1s {
+        width: 326px;
+        height: 257px;
+        left: 68vw;
+        top: calc(40vh + 330px);  
+    }
+    
+    .s2s {
+        width: 435px;
+        height: 313px;
+        left: 78vw;
+        top: 43vh;
+    }
+    
+    .s3s {
+        width: 448px;
+        height: 306px;
+        left: 58vw;
+        top: 43vh;
+    }
+}
+
 @media (max-width: 768px) {
     .logo-circle1 {
         width: 200px;
         height: 200px;
         top: 480px;
-        left: 85px;
+        left: 100px;
     }
     
     .logo-circle2 {
         width: 200px;
         height: 200px;
         top: 480px;
-        left: 285px;
+        left: 300px;
     }
     
     .logo-circle3 {
         width: 200px;
         height: 200px;
         top: 630px;
-        left: 185px;
+        left: 200px;
+        background-color: rgba(55, 55, 55, 0.658);
     }
     
     .s1s {
         width: 204px;
         height: 161px;
         top: 640px;
-        left: 215px;
+        left: 230px;
     }
     
     .s2s {
         width: 272px;
         height: 195px;
         top: 480px;
-        left: 320px;
+        left: 335px;
     }
     
     .s3s {
         width: 280px;
         height: 191px;
         top: 480px;
-        left: 115px;
+        left: 130px;
     }
 
-    .text1 {            
+    .text1, .text2, .text3 {            
         width: 300px;
         font-size: 25px;
     }
-    .text2 {    
+    .text4 {    
         width: 300px;
         font-size: 20px;
     }
@@ -513,12 +574,11 @@ button:hover {
     
     body {
         overflow-x: hidden;
-        width: 100vw;
     }
     
     .image-grid {
-        grid-template-columns: 1fr;
-        gap: 10px;
-        top: -150px;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    top: -150px;
     }
 }
