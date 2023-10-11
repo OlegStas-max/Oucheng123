@@ -165,7 +165,7 @@
     z-index: 12;
 }*/
 
-@keyframes logoAnimation {
+/* @keyframes logoAnimation {
     0% {
         opacity: 0;
         transform: translate(-50%, -50%) scale(0.1);
@@ -174,7 +174,7 @@
         opacity: 1;
         transform: translate(-50%, -50%) scale(1);
     }
-} 
+}  */
 
 .text1, .text2, .text3 {            
     color: #000;
@@ -302,8 +302,8 @@ button:hover {
 
 
 body {
-/*     background-color: #00CDFF; */
-    background-color: #000;
+    background-color: #00CDFF;
+/*     background-color: #000; */
 }
 
 
