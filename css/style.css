@@ -1,3 +1,26 @@
+.header {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.container {
+    max-width: 1200px;
+    max-height: 150px;
+    padding: 20px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 80px;
+    position: relative;
+}
+
 @keyframes ss1 {
     0% {
         transform: translateX(-100px) translateY(-100px); 
@@ -138,17 +161,18 @@
 
 
 body {
-    background-color: #000;
+    overflow-x: hidden;
+    background-color: #00CDFF;
 }
+
 
 .mask {
     align-items: center;
-    width: 1920px;
+    width: 1880px;
     height: 1080px;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
-    top: 150px;
 }
 
 @media (max-width: 768px) {
