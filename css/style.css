@@ -596,6 +596,7 @@ button:hover {
     
     .content-container {
         max-width: 400px;
+        top: 100px;
     }
 
     .header {
