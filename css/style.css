@@ -148,6 +148,7 @@ body {
     margin: 0 auto;
     position: relative;
     overflow: hidden;
+    top: 150px;
 }
 
 @media (max-width: 768px) {
@@ -157,5 +158,6 @@ body {
         margin: 0 auto;
         position: relative;
         overflow: hidden;
+        top: 150px;
     }
 }
