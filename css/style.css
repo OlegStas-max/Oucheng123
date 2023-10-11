@@ -1,3 +1,13 @@
+.text-container {  
+    font-family: 'Vazirmatn', sans-serif;          
+    top: 250px;
+    z-index: 13;
+    left: 10%;
+    top: 30vh;
+    position: relative;
+    font-weight: 600;
+}
+
 .text1 {            
     color: #fff;
     font-size: 45px;
@@ -6,16 +16,6 @@
     text-shadow: -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white, 2px 2px 0 white;
     padding: 0;
     margin: 0;
-}
-
-.text-container {  
-    font-family: 'Vazirmatn', sans-serif;          
-    top: 250px;
-    z-index: 13;
-    left: 10%;
-    top: 30vh;
-    position: absolute;
-    font-weight: 600;
 }
 
 @keyframes ss1 {
