@@ -99,7 +99,7 @@
     transform: translateX(-100px) translateY(600px);
 }
 
-/* .text1, .text2, .text3 {            
+.text1, .text2, .text3 {            
     color: #000;
     font-size: 45px;
     text-align: left;
@@ -129,26 +129,21 @@
 }
 
 .text-container {  
-    font-family: 'Vazirmatn', sans-serif;          
-    top: 250px;
+    font-family: 'Vazirmatn', sans-serif;   
     z-index: 13;
     left: 10%;
     top: 30vh;
     position: absolute;
     font-weight: 600;
+    width: 350px;
 } */
 
-/* .text1, .text2, .text3, .text4, .text5, .text6, .animate-button, .animate-im1, .animate-im2, .animate-im3, .animate-im4, .animate-im5, .animate-im6 {
-    opacity: 0;
-    transform: translateY(10px);
-} */
-
-.animate-im1, .animate-im2, .animate-im3, .animate-im4, .animate-im5, .animate-im6 {
+.text1, .text2, .text3, .text4, .text5, .text6, .animate-button, .animate-im1, .animate-im2, .animate-im3, .animate-im4, .animate-im5, .animate-im6 {
     opacity: 0;
     transform: translateY(10px);
 }
 
-/* .text1 {
+.text1 {
     animation: slide-in 0.5s ease-out 1.0s forwards;
 }
 
@@ -170,7 +165,7 @@
 
 .text6 {
     animation: slide-in 0.5s ease-out 1.3s forwards;
-} */
+}
 
 .animate-button {
     animation: slide-in 0.5s ease-out 2.2s forwards;
@@ -211,7 +206,7 @@
     }
 }
 
-/* button {
+button {
     background-color: #fff;
     font-family: 'Vazirmatn', sans-serif;
     color: #00CDFF;
@@ -232,7 +227,7 @@ button:hover {
     background-color: #00CDFF;;
     border: 2px solid #fff;
     color: #fff;
-}  */
+} 
 
 .image-grid {
     display: grid;
@@ -268,8 +263,8 @@ button:hover {
 
 
 body {
-/*     background-color: #00CDFF; */
-    background-color: #000;
+    background-color: #00CDFF;
+/*     background-color: #000; */
 }
 
 
@@ -307,10 +302,10 @@ body {
     .image-grid {
         grid-template-columns: 1fr;
         gap: 10px;
-        top: -300px;
+/*         top: 1000px; */
     }
 
-/*     .text1, .text2, .text3 {            
+    .text1, .text2, .text3 {            
         display: none;
     }
 
@@ -333,5 +328,5 @@ body {
 
     .text-container {  
         top: 18vh;
-    } */
+    }
 }
