@@ -162,7 +162,8 @@
 
 body {
     overflow-x: hidden;
-    background-color: #00CDFF;
+/*     background-color: #00CDFF; */
+    background-color: #000;
 }
 
 
@@ -183,5 +184,17 @@ body {
         position: relative;
         overflow: hidden;
         top: 150px;
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 75px;
+        width: 180px;
+        height: 86px;
+    }
+
+    .container {
+        max-height: 80px;
     }
 }
