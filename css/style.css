@@ -374,8 +374,8 @@ button:hover {
     top: 0;
     max-width: 80%;
     z-index: 14;
-    left: 10%;
-    right: 10%;
+/*     left: 10%;
+    right: 10%; */
     margin-left: auto;
     margin-right: auto;
 }
