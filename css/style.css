@@ -374,9 +374,7 @@ button:hover {
     top: 0;
     max-width: 80%;
     z-index: 14;
-    align-content: center;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: center;
 }
 
 .image-grid .image {
