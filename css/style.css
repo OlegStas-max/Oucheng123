@@ -152,7 +152,7 @@ body {
 
 @media (max-width: 768px) {
     .mask {
-        width: 400px;
+        width: 350px;
         height: 1080px;
         margin: 0 auto;
         position: relative;
