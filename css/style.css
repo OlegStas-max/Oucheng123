@@ -163,7 +163,7 @@
     top: 43vh;
     animation: logoAnimation 1s ease-out 0.0s forwards;
     z-index: 12;
-}
+}*/
 
 @keyframes logoAnimation {
     0% {
@@ -174,7 +174,7 @@
         opacity: 1;
         transform: translate(-50%, -50%) scale(1);
     }
-} */
+} 
 
 .text1, .text2, .text3 {            
     color: #000;
@@ -220,57 +220,19 @@
     transform: translateY(10px);
 }
 
-.text1 {
-    animation: slide-in 0.5s ease-out 1.0s forwards;
-}
-
-.text2 {
-    animation: slide-in 0.5s ease-out 1.3s forwards;
-}
-
-.text3 {
-    animation: slide-in 0.5s ease-out 1.6s forwards;
-}
-
-.text4 {
-    animation: slide-in 0.5s ease-out 1.9s forwards;
-}
-
-.text5 {
-    animation: slide-in 0.5s ease-out 1.0s forwards;
-}
-
-.text6 {
-    animation: slide-in 0.5s ease-out 1.3s forwards;
-}
-
-.animate-button {
-    animation: slide-in 0.5s ease-out 2.2s forwards;
-}
-
-.animate-im1 {
-    animation: slide-in 0.5s ease-out 0.9s forwards;
-}
-
-.animate-im2 {
-    animation: slide-in 0.5s ease-out 1.2s forwards;
-}
-
-.animate-im3 {
-    animation: slide-in 0.5s ease-out 1.5s forwards;
-}
-
-.animate-im4 {
-    animation: slide-in 0.5s ease-out 1.8s forwards;
-}
-
-.animate-im5 {
-    animation: slide-in 0.5s ease-out 2.1s forwards;
-}
-
-.animate-im6 {
-    animation: slide-in 0.5s ease-out 2.4s forwards;
-}
+.text1 { animation: slide-in 0.5s ease-out 1.0s forwards;}
+.text2 { animation: slide-in 0.5s ease-out 1.3s forwards;}
+.text3 { animation: slide-in 0.5s ease-out 1.6s forwards;}
+.text4 { animation: slide-in 0.5s ease-out 1.9s forwards;}
+.text5 { animation: slide-in 0.5s ease-out 1.0s forwards;}
+.text6 { animation: slide-in 0.5s ease-out 1.3s forwards;}
+.animate-button { animation: slide-in 0.5s ease-out 2.2s forwards;}
+.animate-im1 { animation: slide-in 0.5s ease-out 0.9s forwards;}
+.animate-im2 { animation: slide-in 0.5s ease-out 1.2s forwards;}
+.animate-im3 { animation: slide-in 0.5s ease-out 1.5s forwards;}
+.animate-im4 { animation: slide-in 0.5s ease-out 1.8s forwards;}
+.animate-im5 { animation: slide-in 0.5s ease-out 2.1s forwards;}
+.animate-im6 { animation: slide-in 0.5s ease-out 2.4s forwards;}
 
 @keyframes slide-in {
     0% {
