@@ -528,7 +528,7 @@ button:hover {
         height: 200px;
         top: 630px;
         left: 200px;
-        background-color: rgba(55, 55, 55, 0.658);
+/*         background-color: rgba(55, 55, 55, 0.658); */
     }
     
     .s1s {
@@ -586,16 +586,11 @@ button:hover {
         left: 75px;
         width: 180px;
         height: 86px;
-        position: fixed;
     }
 
     .container {
         max-height: 80px;
         max-width: 350px;
-    }
-    
-    body {
-        overflow-x: hidden;
     }
     
     .image-grid {
@@ -610,6 +605,5 @@ button:hover {
 
     .header {
         width: 350px;
-        position: fixed;
     }
 }
