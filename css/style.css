@@ -100,7 +100,7 @@
 }
 
 .logo-circle1 {
-    opacity: 0;
+/*     opacity: 0; */
     position: absolute;
     width: 400px;
     height: 400px;
@@ -113,7 +113,7 @@
 }
 
 .logo-circle2 {
-    opacity: 0;
+/*     opacity: 0; */
     position: absolute;
     width: 400px;
     height: 400px;
@@ -126,7 +126,7 @@
 }
 
 .logo-circle3 {
-    opacity: 0;
+/*     opacity: 0; */
     position: absolute;
     width: 400px;
     height: 400px;
