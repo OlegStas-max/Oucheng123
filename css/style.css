@@ -528,6 +528,7 @@ button:hover {
         height: 200px;
         top: 630px;
         left: 200px;
+        background-color: rgba(55, 55, 55, 0.658);
     }
     
     .s1s {
@@ -584,7 +585,7 @@ button:hover {
         left: 75px;
         width: 180px;
         height: 86px;
-        position: relative;
+        position: fixed;
     }
 
     .container {
@@ -608,5 +609,6 @@ button:hover {
 
     .header {
         width: 350px;
+        position: fixed;
     }
 }
