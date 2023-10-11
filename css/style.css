@@ -108,26 +108,32 @@
 
 .s1 {
     animation: ss1 5s linear infinite;    
+    transform: translateX(-100px) translateY(-100px);
 }
 
 .s2 {
     animation: ss2 5s linear infinite;    
+    transform: translateX(-100px) translateY(100px);
 }
 
 .s3 {
     animation: ss3 5s linear infinite;    
+    transform: translateX(-100px) translateY(150px);
 }
 
 .s4 {
     animation: ss4 5s linear infinite;    
+    transform: translateX(-100px) translateY(300px);
 }
 
 .s5 {
-    animation: ss5 5s linear infinite;    
+    animation: ss5 5s linear infinite;  
+    transform: translateX(-100px) translateY(450px);
 }
 
 .s6 {
     animation: ss6 5s linear infinite;    
+    transform: translateX(-100px) translateY(600px);
 }
 
 
@@ -136,6 +142,10 @@ body {
 }
 
 .mask {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 1600px;
     height: 1080px;
     margin: 0 auto;
