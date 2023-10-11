@@ -13,10 +13,6 @@
     padding: 20px;
 }
 
-.ccontent-container {
-    max-width: 350px;
-}
-
 .logo {
     display: flex;
     justify-content: center;
@@ -593,6 +589,7 @@ button:hover {
 
     .container {
         max-height: 80px;
+        max-width: 350px;
     }
     
     body {
@@ -603,5 +600,8 @@ button:hover {
         grid-template-columns: 1fr;
         gap: 10px;
         top: -150px;
+    }
+    .ccontent-container {
+        max-width: 350px;
     }
 }
