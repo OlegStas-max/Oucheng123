@@ -99,6 +99,83 @@
     transform: translateX(-100px) translateY(600px);
 }
 
+.logo-circle1 {
+    opacity: 0;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    left: 50vw;
+    top: 43vh;
+    background-color: rgba(255, 255, 255, 0.658);
+    border-radius: 50%;
+    animation: logoAnimation 1s ease-out 0.0s forwards;
+    z-index: 7;
+}
+
+.logo-circle2 {
+    opacity: 0;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    left: 80vw;
+    top: 43vh;
+    background-color: rgba(255, 255, 255, 0.658);
+    border-radius: 50%;
+    animation: logoAnimation 1s ease-out 0.5s forwards;
+    z-index: 8;
+}
+
+.logo-circle3 {
+    opacity: 0;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    left: 65vw;
+    top: calc(43vh + 300px);;
+    background-color: rgba(255, 255, 255, 0.658);
+    border-radius: 50%;
+    animation: logoAnimation 1s ease-out 1.0s forwards;
+    z-index: 9;
+}
+
+.s1s {
+    opacity: 0;
+    position: absolute;   
+    left: 68vw;
+    top: calc(43vh + 330px);    
+    animation: logoAnimation 1s ease-out 1.0s forwards;
+    z-index: 10;
+}
+
+.s2s {
+    opacity: 0;
+    position: absolute;
+    left: 83vw;
+    top: 43vh;
+    animation: logoAnimation 1s ease-out 0.5s forwards;
+    z-index: 11;
+}
+
+.s3s {
+    opacity: 0;
+    position: absolute;
+    left: 53vw;
+    top: 43vh;
+    animation: logoAnimation 1s ease-out 0.0s forwards;
+    z-index: 12;
+}
+
+@keyframes logoAnimation {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.1);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
 .text1, .text2, .text3 {            
     color: #000;
     font-size: 45px;
@@ -263,8 +340,8 @@ button:hover {
 
 
 body {
-/*     background-color: #00CDFF; */
-    background-color: #000;
+    background-color: #00CDFF;
+/*     background-color: #000; */
 }
 
 
@@ -278,6 +355,49 @@ body {
 }
 
 @media (max-width: 768px) {
+    
+    .logo-circle1 {
+        width: 200px;
+        height: 200px;
+        top: 480px;
+        left: 100px;
+    }
+    
+    .logo-circle2 {
+        width: 200px;
+        height: 200px;
+        top: 480px;
+        left: 300px;
+    }
+    
+    .logo-circle3 {
+        width: 200px;
+        height: 200px;
+        top: 630px;
+        left: 200px;
+        background-color: rgba(55, 55, 55, 0.658);
+    }
+    
+    .s1s {
+        width: 204px;
+        height: 161px;
+        top: 640px;
+        left: 230px;
+    }
+    
+    .s2s {
+        width: 272px;
+        height: 195px;
+        top: 480px;
+        left: 335px;
+    }
+    
+    .s3s {
+        width: 280px;
+        height: 191px;
+        top: 480px;
+        left: 130px;
+    }
     .mask {
         width: 350px;
         height: 1080px;
