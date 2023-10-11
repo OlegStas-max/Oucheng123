@@ -576,6 +576,7 @@ button:hover {
     .text-container {  
         left: 10%;
         top: 120px;
+        padding: 10px;
     }
 
     .logo {
