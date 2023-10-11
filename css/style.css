@@ -594,6 +594,14 @@ button:hover {
         gap: 10px;
         top: -150px;
     }
+    
+    .content-container {
+        max-width: 400px;
+    }
+
+    .header {
+        width: 400px;
+    }
 
     .mask {
         width: 350px;
@@ -602,6 +610,4 @@ button:hover {
         position: relative;
         overflow: hidden;
     }
-
 }
-
