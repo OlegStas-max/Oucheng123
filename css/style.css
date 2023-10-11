@@ -601,7 +601,12 @@ button:hover {
         gap: 10px;
         top: -150px;
     }
-    .ccontent-container {
+    
+    .content-container {
         max-width: 350px;
+    }
+
+    .header {
+        width: 350px;
     }
 }
