@@ -508,5 +508,6 @@ body {
 
     .text-container {  
         top: 18vh;
+        left: 20px;
     }
 }
