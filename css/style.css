@@ -442,7 +442,7 @@ body {
     .s1s {
         width: 204px;
         height: 161px;
-        top: 610px;
+        top: 590px;
         left: 110px;
     }
     
@@ -450,14 +450,14 @@ body {
         width: 272px;
         height: 195px;
         top: 400px;
-        left: 210px;
+        left: 180px;
     }
     
     .s3s {
         width: 280px;
         height: 191px;
         top: 400px;
-        left: 10px;
+        left: -10px;
     }
     .mask {
         width: 350px;
