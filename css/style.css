@@ -141,7 +141,7 @@
 .s1s {
     opacity: 0;
     position: absolute;   
-    left: 65vw;
+    left: 68vw;
     top: calc(43vh + 360px);    
     animation: logoAnimation 1s ease-out 1.0s forwards;
     z-index: 10;
