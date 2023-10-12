@@ -483,6 +483,7 @@ body {
     .image-grid {
         grid-template-columns: 1fr;
         gap: 10px;
+        top: -150px;
     }
 
     .text1, .text2, .text3 {            
