@@ -377,14 +377,14 @@ body {
         width: 300px;
         height: 300px;
         left: 45vw;
-        top: 20vh;
+        top: 17vh;
     }
     
     .logo-circle2 {
         width: 300px;
         height: 300px;
         left: 65vw;
-        top: 20vh;
+        top: 17vh;
     }
     
     .logo-circle3 {
@@ -397,22 +397,22 @@ body {
     .s1s {
         width: 326px;
         height: 257px;
-        left: 58vw;
+        left: 55vw;
         top: calc(20vh + 330px);  
     }
     
     .s2s {
         width: 435px;
         height: 313px;
-        left: 68vw;
-        top: 20vh;
+        left: 65vw;
+        top: 17vh;
     }
     
     .s3s {
         width: 448px;
         height: 306px;
-        left: 48vw;
-        top: 20vh;
+        left: 45vw;
+        top: 17vh;
     }
 }
 
