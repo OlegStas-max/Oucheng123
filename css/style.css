@@ -105,7 +105,7 @@
     width: 400px;
     height: 400px;
     left: 40vw;
-    top: 25vh;
+    top: 20vh;
     background-color: rgba(255, 255, 255, 0.658);
     border-radius: 50%;
     animation: logoAnimation 1s ease-out 0.0s forwards;
@@ -118,7 +118,7 @@
     width: 400px;
     height: 400px;
     left: 70vw;
-    top: 25vh;
+    top: 20vh;
     background-color: rgba(255, 255, 255, 0.658);
     border-radius: 50%;
     animation: logoAnimation 1s ease-out 0.5s forwards;
@@ -131,7 +131,7 @@
     width: 400px;
     height: 400px;
     left: 55vw;
-    top: calc(25vh + 300px);
+    top: calc(20vh + 300px);
     background-color: rgba(255, 255, 255, 0.658);
     border-radius: 50%;
     animation: logoAnimation 1s ease-out 1.0s forwards;
@@ -142,7 +142,7 @@
     opacity: 0;
     position: absolute;   
     left: 58vw;
-    top: calc(25vh + 360px);    
+    top: calc(20vh + 360px);    
     animation: logoAnimation 1s ease-out 1.0s forwards;
     z-index: 10;
 }
@@ -151,7 +151,7 @@
     opacity: 0;
     position: absolute;
     left: 70vw;
-    top: 25vh;
+    top: 20vh;
     animation: logoAnimation 1s ease-out 0.5s forwards;
     z-index: 11;
 }
@@ -160,7 +160,7 @@
     opacity: 0;
     position: absolute;
     left: 40vw;
-    top: 25vh;
+    top: 20vh;
     animation: logoAnimation 1s ease-out 0.0s forwards;
     z-index: 12;
 }
@@ -377,42 +377,42 @@ body {
         width: 300px;
         height: 300px;
         left: 45vw;
-        top: 43vh;
+        top: 20vh;
     }
     
     .logo-circle2 {
         width: 300px;
         height: 300px;
         left: 65vw;
-        top: 43vh;
+        top: 20vh;
     }
     
     .logo-circle3 {
         width: 300px;
         height: 300px;
-        left: 65vw;
-        top: calc(37vh + 300px);;
+        left: 55vw;
+        top: calc(20vh + 300px);;
     }
     
     .s1s {
         width: 326px;
         height: 257px;
-        left: 68vw;
-        top: calc(40vh + 330px);  
+        left: 58vw;
+        top: calc(20vh + 330px);  
     }
     
     .s2s {
         width: 435px;
         height: 313px;
         left: 68vw;
-        top: 43vh;
+        top: 20vh;
     }
     
     .s3s {
         width: 448px;
         height: 306px;
         left: 48vw;
-        top: 43vh;
+        top: 20vh;
     }
 }
 
