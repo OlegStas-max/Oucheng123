@@ -104,8 +104,8 @@
     position: absolute;
     width: 400px;
     height: 400px;
-    left: 50vw;
-    top: 43vh;
+    left: 40vw;
+    top: 30vh;
     background-color: rgba(255, 255, 255, 0.658);
     border-radius: 50%;
     animation: logoAnimation 1s ease-out 0.0s forwards;
@@ -117,8 +117,8 @@
     position: absolute;
     width: 400px;
     height: 400px;
-    left: 80vw;
-    top: 43vh;
+    left: 70vw;
+    top: 30vh;
     background-color: rgba(255, 255, 255, 0.658);
     border-radius: 50%;
     animation: logoAnimation 1s ease-out 0.5s forwards;
@@ -130,8 +130,8 @@
     position: absolute;
     width: 400px;
     height: 400px;
-    left: 65vw;
-    top: calc(43vh + 300px);
+    left: 55vw;
+    top: calc(30vh + 300px);
     background-color: rgba(255, 255, 255, 0.658);
     border-radius: 50%;
     animation: logoAnimation 1s ease-out 1.0s forwards;
@@ -141,8 +141,8 @@
 .s1s {
     opacity: 0;
     position: absolute;   
-    left: 68vw;
-    top: calc(43vh + 360px);    
+    left: 58vw;
+    top: calc(30vh + 360px);    
     animation: logoAnimation 1s ease-out 1.0s forwards;
     z-index: 10;
 }
@@ -150,8 +150,8 @@
 .s2s {
     opacity: 0;
     position: absolute;
-    left: 80vw;
-    top: 43vh;
+    left: 70vw;
+    top: 30vh;
     animation: logoAnimation 1s ease-out 0.5s forwards;
     z-index: 11;
 }
@@ -159,15 +159,10 @@
 .s3s {
     opacity: 0;
     position: absolute;
-    left: 50vw;
-    top: 43vh;
+    left: 40vw;
+    top: 30vh;
     animation: logoAnimation 1s ease-out 0.0s forwards;
     z-index: 12;
-}
-
-.content-container {
-    left: 50vw;
-    top: 30vh;
 }
 
 @keyframes logoAnimation {
@@ -307,8 +302,8 @@ button:hover {
 
 
 body {
-    background-color: #00CDFF;
-/*     background-color: #000; */
+/*     background-color: #00CDFF; */
+    background-color: #000;
 }
 
 
