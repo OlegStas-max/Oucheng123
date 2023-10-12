@@ -105,7 +105,7 @@
     width: 400px;
     height: 400px;
     left: 40vw;
-    top: 30vh;
+    top: 25vh;
     background-color: rgba(255, 255, 255, 0.658);
     border-radius: 50%;
     animation: logoAnimation 1s ease-out 0.0s forwards;
@@ -118,7 +118,7 @@
     width: 400px;
     height: 400px;
     left: 70vw;
-    top: 30vh;
+    top: 25vh;
     background-color: rgba(255, 255, 255, 0.658);
     border-radius: 50%;
     animation: logoAnimation 1s ease-out 0.5s forwards;
@@ -131,7 +131,7 @@
     width: 400px;
     height: 400px;
     left: 55vw;
-    top: calc(30vh + 300px);
+    top: calc(25vh + 300px);
     background-color: rgba(255, 255, 255, 0.658);
     border-radius: 50%;
     animation: logoAnimation 1s ease-out 1.0s forwards;
@@ -142,7 +142,7 @@
     opacity: 0;
     position: absolute;   
     left: 58vw;
-    top: calc(30vh + 360px);    
+    top: calc(25vh + 360px);    
     animation: logoAnimation 1s ease-out 1.0s forwards;
     z-index: 10;
 }
@@ -151,7 +151,7 @@
     opacity: 0;
     position: absolute;
     left: 70vw;
-    top: 30vh;
+    top: 25vh;
     animation: logoAnimation 1s ease-out 0.5s forwards;
     z-index: 11;
 }
@@ -160,7 +160,7 @@
     opacity: 0;
     position: absolute;
     left: 40vw;
-    top: 30vh;
+    top: 25vh;
     animation: logoAnimation 1s ease-out 0.0s forwards;
     z-index: 12;
 }
@@ -272,7 +272,6 @@ button:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-/*     margin-top: 1000px; */
     position: absolute;
     top: -150;
     left: 0;
@@ -302,8 +301,7 @@ button:hover {
 
 
 body {
-/*     background-color: #00CDFF; */
-    background-color: #000;
+    background-color: #00CDFF;
 }
 
 
@@ -316,9 +314,111 @@ body {
     overflow: hidden;
 }
 
+@media (max-width: 1200px) {
+    
+    .logo-circle1 {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .logo-circle2 {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .logo-circle3 {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .s1s {
+        width: 326px;
+        height: 257px;
+    }
+    
+    .s2s {
+        width: 435px;
+        height: 313px;
+    }
+    
+    .s3s {
+        width: 448px;
+        height: 306px;
+    }
+
+    .text1, .text2, .text3 {            
+        width: 200px;
+        font-size: 30px;
+    }
+    .text4 {    
+        width: 200px;
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 20px;
+        width: 250px;
+        height: 50px;
+        top: 50px;
+    }
+
+    .text-container {  
+        left: 5%;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+}
+
+@media (max-height: 850px) {
+
+    .logo-circle1 {
+        width: 300px;
+        height: 300px;
+        left: 45vw;
+        top: 43vh;
+    }
+    
+    .logo-circle2 {
+        width: 300px;
+        height: 300px;
+        left: 65vw;
+        top: 43vh;
+    }
+    
+    .logo-circle3 {
+        width: 300px;
+        height: 300px;
+        left: 65vw;
+        top: calc(37vh + 300px);;
+    }
+    
+    .s1s {
+        width: 326px;
+        height: 257px;
+        left: 68vw;
+        top: calc(40vh + 330px);  
+    }
+    
+    .s2s {
+        width: 435px;
+        height: 313px;
+        left: 68vw;
+        top: 43vh;
+    }
+    
+    .s3s {
+        width: 448px;
+        height: 306px;
+        left: 48vw;
+        top: 43vh;
+    }
+}
+
 @media (max-width: 768px) {
     
-/*     .logo-circle1 {
+    .logo-circle1 {
         width: 200px;
         height: 200px;
         top: 480px;
@@ -337,7 +437,6 @@ body {
         height: 200px;
         top: 630px;
         left: 200px;
-        background-color: rgba(55, 55, 55, 0.658);
     }
     
     .s1s {
@@ -359,7 +458,7 @@ body {
         height: 191px;
         top: 480px;
         left: 130px;
-    } */
+    }
     .mask {
         width: 350px;
         height: 1080px;
@@ -384,7 +483,6 @@ body {
     .image-grid {
         grid-template-columns: 1fr;
         gap: 10px;
-/*         top: 1000px; */
     }
 
     .text1, .text2, .text3 {            
