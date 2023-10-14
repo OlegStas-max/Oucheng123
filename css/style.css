@@ -198,14 +198,14 @@ button:hover {
     display: block;
 }
 
-/* .mask {
+.mask {
     align-items: center;
     width: 1600px;
     height: 1080px;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
-} */
+}
 
 @media (max-width: 1200px) {
     .text-container {
@@ -245,8 +245,8 @@ button:hover {
         font-size: 40px;
         width: 350px;
         padding: 0px;
-/*         color: #000; */
-        color: #E0E0E0;
+        color: #000;
+/*         color: #E0E0E0; */
     }
     
     .text2 { 
@@ -318,11 +318,11 @@ button:hover {
         height: auto;
     }
 
-/*     .mask {
+    .mask {
         width: 350px;
         height: 1080px;
         margin: 0 auto;
         position: relative;
         overflow: hidden;
-    } */
+    }
 }
