@@ -325,6 +325,6 @@ button:hover {
         margin: 0 auto;
         position: relative;
         overflow: hidden;
-        top: -300px;
+        top: 0px;
     }
 }
