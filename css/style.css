@@ -236,8 +236,8 @@ button:hover {
         font-size: 40px;
         width: 350px;
         padding: 0px;
-        color: #000;
-/*         color: #E0E0E0; */
+/*         color: #000; */
+        color: #E0E0E0;
     }
     
     .text2 { 
@@ -297,18 +297,18 @@ button:hover {
         animation: Animat3_ 1s ease-out 0.5s forwards;
     }
 
-     .im1 {        
-        width: 227px;
+    .im1 {        
+        width: 170px;
         height: auto;
     }
 
     .im2 {        
-        width: 216px;
+        width: 162px;
         height: auto;
     }
 
     .im3 {        
-        width: 201px;
+        width: 151px;
         height: auto;
     }
 
