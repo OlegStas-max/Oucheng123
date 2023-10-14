@@ -270,7 +270,7 @@ button:hover {
     }
 
     .text-container {
-        top: 100px;  
+        top: 120px;  
     }
 
     button {
@@ -278,7 +278,7 @@ button:hover {
         border-radius: 30px;
         width: 250px;
         height: 60px;
-        top: 50px;
+        top: 20px;
     }
 
     .s1 {
