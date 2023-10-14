@@ -236,8 +236,8 @@ button:hover {
         font-size: 40px;
         width: 350px;
         padding: 0px;
-        color: #000;
-/*         color: #E0E0E0; */
+/*         color: #000; */
+        color: #E0E0E0;
     }
     
     .text2 { 
@@ -282,7 +282,7 @@ button:hover {
     .s2 {        
         left: 5vw;
         top: 60vh;       
-        width: 300px;
+        width: 200px;
         height: auto;
         animation: Animat1_ 1s ease-out 0.5s forwards;
     }
@@ -290,7 +290,7 @@ button:hover {
     .s3 {       
         left: 25vw;
         top: 65vh;
-        width: 300px;
+        width: 200px;
         height: auto;
         animation: Animat2_ 1s ease-out 0.5s forwards;
     }
@@ -298,7 +298,7 @@ button:hover {
     .s4 {
         left: 45vw;
         top: 70vh;
-        width: 300px;
+        width: 200px;
         height: auto;
         animation: Animat3_ 1s ease-out 0.5s forwards;
     }
