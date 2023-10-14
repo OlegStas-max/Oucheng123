@@ -218,6 +218,10 @@ button:hover {
 
 @media (max-width: 768px) {
 
+    header {
+        height: 100px;
+    }
+
     .image-grid {
         grid-template-columns: 1fr;
         gap: 10px;
