@@ -236,7 +236,8 @@ button:hover {
         font-size: 40px;
         width: 350px;
         padding: 0px;
-        color: #E0E0E0;
+        color: #000;
+/*         color: #E0E0E0; */
     }
     
     .text2 { 
@@ -260,7 +261,7 @@ button:hover {
     }
 
     .text-container {
-        top: 250px;  
+        top: 150px;  
     }
 
     button {
