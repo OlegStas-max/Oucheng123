@@ -312,7 +312,7 @@ button:hover {
         height: auto;
     }
 
-    @keyframes Animat1_ {
+/*     @keyframes Animat1_ {
         0% {
             opacity: 0;
             transform: translateX(200px) translateY(70px) scale(0.1);
@@ -343,5 +343,5 @@ button:hover {
             opacity: 1;
             transform: scale(1);
         }
-    }
+    } */
 }
