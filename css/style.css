@@ -267,7 +267,7 @@ button:hover {
     .image-grid {
         grid-template-columns: 1fr;
         gap: 10px;
-        top: 800px;
+        top: 750px;
     }
 
     .text-container {
