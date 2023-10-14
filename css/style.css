@@ -245,8 +245,8 @@ button:hover {
         font-size: 40px;
         width: 350px;
         padding: 0px;
-/*         color: #000; */
-        color: #E0E0E0;
+        color: #000;
+/*         color: #E0E0E0; */
     }
     
     .text2 { 
@@ -305,7 +305,7 @@ button:hover {
         top: 70vh;
 /*         animation: Animat3_ 1s ease-out 0.5s forwards; */
     }
-/* 
+    
     .im1 {        
         width: 170px;
         height: auto;
@@ -319,7 +319,7 @@ button:hover {
     .im3 {        
         width: 151px;
         height: auto;
-    } */
+    }
 
 /*     .mask {
         width: 350px;
