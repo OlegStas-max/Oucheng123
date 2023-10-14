@@ -12,6 +12,11 @@ header {
     top: 0;
 }
 
+.logo {
+    height: 140px;
+    width: auto;    
+}
+
 body {
     background-color: #F0F3F3;
 }
@@ -220,6 +225,11 @@ button:hover {
 
     header {
         height: 100px;
+    }
+
+    .logo {
+        height: 90px;
+        width: auto;        
     }
 
     .text1 { 
