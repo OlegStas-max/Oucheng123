@@ -247,7 +247,6 @@ button:hover {
         width: 350px;
         padding: 0px;
         color: #000;
-/*         color: #E0E0E0; */
     }
     
     .text2 { 
@@ -320,7 +319,7 @@ button:hover {
     }
 
     .mask {
-        width: 350px;
+        width: 370px;
         height: 1080px;
         margin: 0 auto;
         position: relative;
