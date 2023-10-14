@@ -198,14 +198,14 @@ button:hover {
     display: block;
 }
 
-.mask {
+/* .mask {
     align-items: center;
     width: 1600px;
     height: 1080px;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
-}
+} */
 
 @media (max-width: 1200px) {
     .text-container {
@@ -321,13 +321,13 @@ button:hover {
         height: auto;
     }
 
-    .mask {
+/*     .mask {
         width: 350px;
         height: 1080px;
         margin: 0 auto;
         position: relative;
         overflow: hidden;
-    }
+    } */
 
 /*     @keyframes Animat1_ {
         0% {
