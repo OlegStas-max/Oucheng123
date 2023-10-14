@@ -245,8 +245,8 @@ button:hover {
         font-size: 40px;
         width: 350px;
         padding: 0px;
-        color: #000;
-/*         color: #E0E0E0; */
+/*         color: #000; */
+        color: #E0E0E0;
     }
     
     .text2 { 
@@ -260,7 +260,7 @@ button:hover {
         border-radius: 30px;
         width: 300px;
         height: 60px;
-        top: -20px;
+        top: -50px;
     }
 
     .image-grid {
@@ -270,13 +270,13 @@ button:hover {
     }
 
     .text-container {
-        top: 150px;  
+        top: 100px;  
     }
 
     button {
         font-size: 30px;
         border-radius: 30px;
-        width: 300px;
+        width: 250px;
         height: 60px;
         top: 50px;
     }
@@ -290,20 +290,17 @@ button:hover {
 
     .s2 {        
         left: 5vw;
-        top: 60vh;       
-/*         animation: Animat1_ 1s ease-out 0.5s forwards; */
+        top: 50vh;       
     }
     
     .s3 {       
-        left: 25vw;
-        top: 65vh;
-/*         animation: Animat2_ 1s ease-out 0.5s forwards; */
+        left: 30vw;
+        top: 55vh;
     }
     
     .s4 {
-        left: 45vw;
-        top: 70vh;
-/*         animation: Animat3_ 1s ease-out 0.5s forwards; */
+        left: 55vw;
+        top: 60vh;
     }
     
     .im1 {        
@@ -327,38 +324,5 @@ button:hover {
         margin: 0 auto;
         position: relative;
         overflow: hidden;
-    } */
-
-/*     @keyframes Animat1_ {
-        0% {
-            opacity: 0;
-            transform: translateX(200px) translateY(70px) scale(0.1);
-        }
-        100% {
-            opacity: 1;
-            transform: scale(1);
-        }
-    }
-    
-    @keyframes Animat2_ {
-        0% {
-            opacity: 0;
-            transform: translateX(150px) translateY(50px) scale(0.1);
-        }
-        100% {
-            opacity: 1;
-            transform: scale(1);
-        }
-    }
-    
-    @keyframes Animat3_ {
-        0% {
-            opacity: 0;
-            transform: translateX(100px) translateY(30px) scale(0.1);
-        }
-        100% {
-            opacity: 1;
-            transform: scale(1);
-        }
     } */
 }
