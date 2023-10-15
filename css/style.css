@@ -313,7 +313,7 @@ button:hover {
         font-size: 25px;        
         width: 300px;
         height: 60px;        
-        left: 40px;
+        left: 30px;
         top: 430px;
     }
 
@@ -328,7 +328,7 @@ button:hover {
     }
 
     .all {
-        left: -120px;
+        left: -125px;
         top: 17vh;
     }
 
@@ -338,7 +338,7 @@ button:hover {
     }
 
     .mask {
-        width: 380px;
+        width: 370px;
         height: 3600px;
         margin: 0 auto;
         position: relative;
