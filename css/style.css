@@ -67,6 +67,7 @@ header {
 
 body {
     background-color: #A2401D;
+    left: 0;
 }
 
 .back1 {
@@ -289,13 +290,13 @@ button:hover {
 
     .text3 {       
         padding-left: 16px;
-        top: 150px;
+        top: 130px;
         position: absolute;
     }
     
     .text-container {        
         left: 15px;  
-        top: 90px; 
+        top: 0; 
     }
     
     button {       
@@ -318,8 +319,8 @@ button:hover {
     }
 
     .all {
-        left: -110px;
-        top: 17vh;
+        left: -120px;
+        top: 16vh;
     }
 
     .image-grid {
