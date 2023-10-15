@@ -67,7 +67,7 @@ header {
 
 body {
     background-color: #A2401D;
-    left: 0px;
+    left: -10px;
 }
 
 .back1 {
@@ -296,7 +296,7 @@ button:hover {
     
     .text-container {        
         left: 5px;  
-        top: 50px; 
+        top: 60px; 
     }
     
     button {       
@@ -321,7 +321,7 @@ button:hover {
 
     .all {
         left: -120px;
-        top: 16vh;
+        top: 16.5vh;
     }
 
     .image-grid {
