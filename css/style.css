@@ -254,7 +254,7 @@ button:hover {
     }
     
     .logo { 
-        padding-left: 30px;
+        padding-left: 20px;
     }
 
     .logo_ { 
@@ -294,8 +294,8 @@ button:hover {
     }
     
     .text-container {        
-        left: 5%;  
-        top: 100px; 
+        left: 15px;  
+        top: 90px; 
     }
     
     button {       
@@ -303,7 +303,7 @@ button:hover {
         width: 300px;
         height: 60px;        
         left: 30px;
-        top: 480px;
+        top: 400px;
     }
 
     .smok1 {
@@ -319,7 +319,7 @@ button:hover {
 
     .all {
         left: -110px;
-        top: 20vh;
+        top: 17vh;
     }
 
     .image-grid {
