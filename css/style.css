@@ -67,7 +67,7 @@ header {
 
 body {
     background-color: #A2401D;
-    left: -10px;
+    margin: 0;
 }
 
 .back1 {
@@ -296,16 +296,16 @@ button:hover {
     
     .text-container {        
         left: 5px;  
-        top: 60px; 
+        top: 70px; 
     }
     
     button {       
         font-size: 25px;        
         width: 300px;
         height: 60px;        
-        left: 30px;
+        left: 40px;
         top: 450px;
-        background-color: #fff;
+/*         background-color: #fff; */
     }
 
     .smok1 {
@@ -321,7 +321,7 @@ button:hover {
 
     .all {
         left: -120px;
-        top: 16.5vh;
+        top: 17vh;
     }
 
     .image-grid {
