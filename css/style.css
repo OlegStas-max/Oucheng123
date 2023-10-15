@@ -200,6 +200,16 @@ button:hover {
     display: block;
 }
 
+.mask {
+    align-items: center;
+    width: 1920px;
+    height: 1080px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    top: 0px;
+}
+
 @media (max-width: 1200px) {
 
     .text1_,.text2_  {       
@@ -305,7 +315,7 @@ button:hover {
         height: 60px;        
         left: 40px;
         top: 450px;
-/*         background-color: #fff; */
+        background-color: #fff;
     }
 
     .smok1 {
@@ -327,5 +337,14 @@ button:hover {
     .image-grid {
         grid-template-columns: 1fr;
         gap: 10px;
+    }
+
+    .mask {
+        width: 380px;
+        height: 1080px;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        top: 0px;
     }
 }
