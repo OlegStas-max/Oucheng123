@@ -155,7 +155,7 @@ button {
 
 
 button:hover {
-    background-color: #fff;;
+    background-color: #fff;
     border: 2px solid #000;
     color: #000;
 } 
@@ -315,6 +315,7 @@ button:hover {
         height: 60px;        
         left: 30px;
         top: 430px;
+        background-color: #fff;
     }
 
     .smok1 {
