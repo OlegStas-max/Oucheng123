@@ -391,8 +391,39 @@ button:hover {
 
 @media (max-width: 768px) {
 
+    .logol {
+        left: 0px;
+        position: absolute;
+        height: 90px;
+        width: auto; 
+    }
+    
+    .logor {
+        left: calc(100vw - 95px);
+        position: absolute;
+        height: 90px;
+        width: auto;        
+    }
+    
+    .logo_ {
+        position: absolute;
+        left: calc((100vw/2) - 80px);
+        z-index: 1;
+        width: 150px;
+        height: auto;
+    }
+
+    .centr {
+        position: relative;
+        background-color: #232020;
+        width: calc(100vw - 175px);
+        height: 90px;
+        z-index: 0;
+        left: 80px;
+    }
+
     .all {
-        top: 65vh;
+        top: 60vh;
         left: 5vw;
     }
     
@@ -422,7 +453,7 @@ button:hover {
     }
 
     .text-container {
-        top: 20vh;
+        top: 15vh;
         left: 10%;    
     }
     
@@ -453,5 +484,6 @@ button:hover {
     .image-grid {
         grid-template-columns: 1fr;
         gap: 10px;
+        top: 95vh;
     }
 }
