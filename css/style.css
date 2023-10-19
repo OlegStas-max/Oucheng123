@@ -423,7 +423,7 @@ button:hover {
     }
 
     .all {
-        top: 53vh;
+        top: 55vh;
         left: 2vw;
     }
     
@@ -439,7 +439,7 @@ button:hover {
 
     .im2 {
         left: 120px;
-        top: -60px;
+        top: -55px;
     }
     
     .im3_ {
@@ -449,7 +449,7 @@ button:hover {
 
     .im3 {
         left: 240px;
-        top: -120px;
+        top: -110px;
     }
 
     .text-container {
@@ -478,13 +478,13 @@ button:hover {
         font-size: 20px;                
         width: 200px;
         height: 40px;
-        top: 320px;       
+        top: 350px;       
         left: 60px; 
     }
 
     .image-grid {
         grid-template-columns: 1fr;
         gap: 10px;
-        top: 90vh;
+        top: 100vh;
     }
 }
