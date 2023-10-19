@@ -485,6 +485,6 @@ button:hover {
     .image-grid {
         grid-template-columns: 1fr;
         gap: 10px;
-        top: 100vh;
+        top: 98vh;
     }
 }
