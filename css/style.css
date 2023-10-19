@@ -423,7 +423,7 @@ button:hover {
     }
 
     .all {
-        top: 50vh;
+        top: 60vh;
         left: 2vw;
     }
     
@@ -453,7 +453,7 @@ button:hover {
     }
 
     .text-container {
-        top: 20vh;
+        top: 18vh;
         left: 10%;    
     }
     
@@ -478,7 +478,8 @@ button:hover {
         font-size: 20px;                
         width: 200px;
         height: 40px;
-        top: 420px;        
+        top: 320px;       
+        left: 80px; 
     }
 
     .image-grid {
