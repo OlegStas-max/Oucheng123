@@ -423,7 +423,7 @@ button:hover {
     }
 
     .all {
-        top: 60vh;
+        top: 53vh;
         left: 2vw;
     }
     
@@ -438,8 +438,8 @@ button:hover {
     }
 
     .im2 {
-        left: 115px;
-        top: -80px;
+        left: 120px;
+        top: -60px;
     }
     
     .im3_ {
@@ -448,8 +448,8 @@ button:hover {
     }
 
     .im3 {
-        left: 230px;
-        top: -160px;
+        left: 240px;
+        top: -120px;
     }
 
     .text-container {
@@ -479,7 +479,7 @@ button:hover {
         width: 200px;
         height: 40px;
         top: 320px;       
-        left: 80px; 
+        left: 60px; 
     }
 
     .image-grid {
