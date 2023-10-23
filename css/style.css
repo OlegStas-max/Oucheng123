@@ -399,7 +399,7 @@ button:hover {
     }
     
     .im3 {
-        left: 105px;
+        left: 125px;
     }
 
     .text-container {
@@ -408,6 +408,7 @@ button:hover {
 
     .text1 {            
         font-size: 35px;
+        padding-left: 20px;
 /*         color: red; */
     }
     
