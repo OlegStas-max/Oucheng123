@@ -468,4 +468,8 @@ button:hover {
         top: calc(100vh - 135px);
     }
 
+    .logo-container {
+        top: -50px;   
+    }
+
 }
