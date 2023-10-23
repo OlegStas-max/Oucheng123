@@ -414,12 +414,12 @@ button:hover {
     }
 
     .im1 {
-        left: -80px;
+        left: -85px;
         top: 18vh;
     }
     
     .im2 {
-        left: 25px;
+        left: 20px;
         top: 23vh;
     }
     
@@ -448,8 +448,8 @@ button:hover {
         font-size: 25px;
         width: 250px;
         height: 50px;
-        top: 380px;
-        left: 45px;
+        top: 370px;
+        left: 40px;
     }
 
     .image-grid {
