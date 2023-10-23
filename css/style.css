@@ -144,7 +144,7 @@ body {
     left: 10%;    
     text-align: left;
     font-weight: 600;
-    color: #232020;
+    color: #000;
 }
 
 .text1 {            
@@ -363,6 +363,7 @@ button:hover {
 
     .text1 {            
         font-size: 35px;
+        color: red;
     }
     
     .text2 { 
@@ -381,6 +382,20 @@ button:hover {
         grid-template-columns: 1fr;
         gap: 10px;
         top: 98vh;
+    }
+
+    .logo {
+        width: 150px;
+        height: auto;
+    }
+    
+    .pid {
+        width: 300px;
+        height: 80px;    
+    }
+    
+    .logotext {
+        font-size: 50px;
     }
 
 }
