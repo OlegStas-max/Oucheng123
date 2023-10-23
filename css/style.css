@@ -325,6 +325,16 @@ button:hover {
     display: block;
 }
 
+.mask {
+    align-items: center;
+    width: 1920px;
+    height: 1080px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    top: 0px;
+}
+
 @media (max-width: 1200px) {
 
     .text-container {        
@@ -404,18 +414,18 @@ button:hover {
     }
 
     .im1 {
-        left: -65px;
-        top: 22vh;
+        left: -70px;
+        top: 20vh;
     }
     
     .im2 {
         left: 30px;
-        top: 27vh;
+        top: 25vh;
     }
     
     .im3 {
         left: 125px;
-        top: 17vh;
+        top: 15vh;
     }
 
     .text-container {
@@ -425,21 +435,21 @@ button:hover {
     .text1 {            
         font-size: 35px;
         padding-left: 20px;
-        color: red;
+/*         color: red; */
     }
     
     .text2 { 
         font-size: 25px;  
         padding-left: 20px;
-        padding-top: 10px;
+        padding-top: 0;
     }
 
     button {
         font-size: 25px;
         width: 250px;
         height: 50px;
-        top: 420px;
-        padding-left: 40px;
+        top: 380px;
+        padding-left: 50px;
     }
 
     .image-grid {
@@ -462,7 +472,7 @@ button:hover {
     
     .logotext {
         font-size: 50px;
-        animation: Anima 2s ease-in-out 1.0s forwards;
+        animation: Anima_ 2s ease-in-out 1.0s forwards;
     }
 
     .down {
@@ -471,6 +481,15 @@ button:hover {
 
     .logo-container {
         top: -50px;   
+    }
+
+    .mask {
+        width: 370px;
+        height: 1080px;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        top: 0px;
     }
 
 }
