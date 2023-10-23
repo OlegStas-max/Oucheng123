@@ -108,6 +108,51 @@ body {
       }
 }
 
+@keyframes Animat_ {
+    0% {
+        transform: translate(0, 0) scale(1);
+      }
+      25% {
+        transform: translate(-90px, 0) scale(0.6);
+      }
+      50% {
+        transform: translate(-90px, 0) scale(0.6);
+      }
+      100% {
+        transform: translate(-110px, 0) scale(0.6);
+      }
+}
+
+@keyframes Anim_ {
+    0% {
+        transform: translate(-60px, 0) scale(1);
+      }
+      25% {
+        transform: translate(-110px, 0) scale(0.5);
+      }
+      50% {
+        transform: translate(-110px, 0) scale(0.5);
+      }
+      100% {
+        transform: translate(-110px, 0) scale(0.5);
+      }
+}
+
+@keyframes Anima_ {
+    0% {
+        transform: translate(-60px, 0) scale(1);
+      }
+      25% {
+        transform: translate(50px, 0) scale(0.5);
+      }
+      50% {
+        transform: translate(50px, 0) scale(0.5);
+      }
+      100% {
+        transform: translate(50px, 0) scale(0.5);
+      }
+}
+
 .dw {
     width: 1920px;
     height: auto;
@@ -363,7 +408,7 @@ button:hover {
 
     .text1 {            
         font-size: 35px;
-        color: red;
+/*         color: red; */
     }
     
     .text2 { 
@@ -387,15 +432,18 @@ button:hover {
     .logo {
         width: 150px;
         height: auto;
+        animation: Animat_ 2s ease-in-out 1.0s forwards;
     }
     
     .pid {
         width: 300px;
         height: 80px;    
+        animation: Anim_ 2s ease-in-out 1.0s forwards;
     }
     
     .logotext {
         font-size: 50px;
+        animation: Anima 2s ease-in-out 1.0s forwards;
     }
 
     .down {
