@@ -152,13 +152,13 @@ body {
         transform: translate(0px, 0) scale(1);
       }
       25% {
-        transform: translate(30px, 0) scale(0.5);
+        transform: translate(20px, 0) scale(0.5);
       }
       50% {
-        transform: translate(30px, 0) scale(0.5);
+        transform: translate(20px, 0) scale(0.5);
       }
       100% {
-        transform: translate(30px, 0) scale(0.5);
+        transform: translate(20px, 0) scale(0.5);
       }
 }
 
@@ -389,17 +389,17 @@ button:hover {
     }
 
     .im1_ {
-        height: 300px;
+        height: 250px;
         width: auto;
     }
     
     .im2_ {
-        height: 300px;
+        height: 250px;
         width: auto;
     }
     
     .im3_ {
-        height: 300px;
+        height: 250px;
         width: auto;
     }
 
@@ -425,7 +425,7 @@ button:hover {
     .text1 {            
         font-size: 35px;
         padding-left: 20px;
-/*         color: red; */
+        color: red;
     }
     
     .text2 { 
@@ -439,6 +439,7 @@ button:hover {
         width: 250px;
         height: 50px;
         top: 400px;
+        padding-left: 40px;
     }
 
     .image-grid {
