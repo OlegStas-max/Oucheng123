@@ -328,7 +328,7 @@ button:hover {
 .mask {
     align-items: center;
     width: 1920px;
-    height: 1080px;
+    height: 4080px;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -414,7 +414,7 @@ button:hover {
     }
 
     .im1 {
-        left: -85px;
+        left: -90px;
         top: 18vh;
     }
     
@@ -449,7 +449,7 @@ button:hover {
         width: 250px;
         height: 50px;
         top: 370px;
-        left: 40px;
+        left: 35px;
     }
 
     .image-grid {
@@ -480,12 +480,12 @@ button:hover {
     }
 
     .logo-container {
-        top: -50px;   
+        top: -40px;   
     }
 
     .mask {
         width: 370px;
-        height: 1080px;
+        height: 4080px;
         margin: 0 auto;
         position: relative;
         overflow: hidden;
