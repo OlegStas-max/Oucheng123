@@ -300,7 +300,7 @@ button:hover {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     position: relative;
-    top: 100vh;
+    top: 1000px;
     left: 0;
     right: 0;
     max-width: 80%;
@@ -328,9 +328,9 @@ button:hover {
 .mask {
     align-items: center;
     width: 1920px;
-    height: 4080px;
+    height: 1080px;
     margin: 0 auto;
-    position: relative;
+    position: absolute;
     overflow: hidden;
     top: 0px;
 }
