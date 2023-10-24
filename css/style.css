@@ -483,13 +483,10 @@ button:hover {
         top: -40px;   
     }
 
+
     .mask {
         width: 370px;
         height: 2080px;
-        margin: 0 auto;
-        position: relative;
-        overflow: hidden;
-        top: 0px;
     }
 
 }
