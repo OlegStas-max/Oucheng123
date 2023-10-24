@@ -156,6 +156,16 @@ button:hover {
     display: block;
 }
 
+.mask {
+    align-items: center;
+    width: 1920px;
+    height: 1080px;
+    margin: 0 auto;
+    position: absolute;
+    overflow: hidden;
+    top: 0px;
+}
+
 @media (max-width: 1400px) {
 
     .text-container {
@@ -300,6 +310,11 @@ button:hover {
         grid-template-columns: 1fr;
         gap: 10px;
         top: 90vh;
+    }
+
+    .mask {
+        width: 370px;
+        height: 2080px;
     }
 
 }
