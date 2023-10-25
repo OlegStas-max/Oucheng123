@@ -77,7 +77,7 @@ body {
 .image-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 0px;
+    gap: 20px;
     position: absolute;
     top: 1000px;
     left: 0;
@@ -94,7 +94,7 @@ body {
     max-height: 100%;
     overflow: hidden;
     width: auto;
-    border: 10px solid #E5097F;
+    border: 2px solid #E5097F;
     cursor: pointer;
 }
 
@@ -193,6 +193,7 @@ body {
     .image-grid {
         grid-template-columns: 1fr;
         top: 100vh;
+        gap: 10px;
     }
 
 }
