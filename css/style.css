@@ -1,5 +1,5 @@
 header {
-    background-color: #FBCFA4;
+    background-color: #Fff;
     height: 130px;
     width: 100%;
     display: flex;
@@ -10,127 +10,67 @@ header {
     padding: 0;
     top: 0;   
     left: 0; 
+    opacity: 0.7;
 }
 
 .logo { 
-    padding-left: 70px;
+    padding-top: 20px;
+    padding-left: 20px;
+    z-index: 1002;
+    position: fixed;
+}
+
+.kut {
+    z-index: 1001;
+    margin: 0;
+    padding: 0;
+    top: 0;   
+    left: 0; 
+    position: fixed;
 }
 
 body {
     padding-left: 0;
     left: 0;
     margin: 0;
-    background-color: #FBCFA4;
+    background-color: #55620d;
 }
 
 .back {
     padding-left: 0;
     left: 0;
     margin: 0;
+    top: -350px;
+    position: fixed;
+    z-index: 0;
 }
 
 .text-container {
-    font-family: 'Vazirmatn', sans-serif;
-    z-index: 3;
-    top: 35vh;
+    z-index: 1;
     position: absolute;
-    left: 10vw;    
-    text-align: center;
-    font-weight: 600;
-    color: #000;
-    font-size: 55px;
-    width: 300px;    
+    left: 0;    
+    top: 75vh; 
 }
 
-.text1 {  
-    padding: 0;
-    margin: 0;
-    animation: slide-in 1s ease-out 0.0s forwards;
-    opacity: 0;
-}
-
-.text2 {        
-    padding: 0;
-    margin: 0;    
-    animation: slide-in 1s ease-out 0.3s forwards;
-    opacity: 0;
-}
-
-button {
-    font-family: 'Vazirmatn', sans-serif;
-    background-color: #FF000A;
-    color: #fff;
-    font-size: 30px;
-    font-weight: bold;
-    cursor: pointer;
-    border: 2px solid #fff;
-    width: 250px;
-    height: 60px;
-    top: 70px;
-    text-align: center;
-    z-index: 4;
-    position: relative;
-    animation: slide-in 1s ease-out 0.6s forwards;
-    opacity: 0;
-}
-
-button:hover {
-    background-color: #fff;
-    border: 2px solid #FF000A;
-    color: #FF000A;
-}
-
-.im1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.text2 {
+    z-index: 1;
     position: absolute;
-    animation: slide-in 1s ease-out 1.5s forwards;
-    opacity: 0;
-    z-index: 8;
-    left: calc(100vw - 448px);
-    top: 27vh;
+    left: 0;    
+    top: 90px;
 }
 
-.im2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.text_2 {
+    z-index: 2;
     position: absolute;
-    left: 40vw;
-    top: 27vh;
-    animation: slide-in 1s ease-out 0.9s forwards;
-    opacity: 0;
-    z-index: 6;
-}
-
-.im3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    left: 50vw;
-    top: 56vh;
-    animation: slide-in 1s ease-out 1.2s forwards;
-    opacity: 0;
-    z-index: 7;
-}
-
-@keyframes slide-in {
-    0% {
-        transform: translate(30px, 0);
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
+    left: 0;   
+    top: 90px;
+    display: none;
 }
 
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
     position: absolute;
     top: 1000px;
     left: 0;
@@ -147,7 +87,7 @@ button:hover {
     max-height: 100%;
     overflow: hidden;
     width: auto;
-    border: 2px solid #FECC00;
+    border: 10px solid #E5097F;
     cursor: pointer;
 }
 
@@ -157,171 +97,96 @@ button:hover {
     display: block;
 }
 
-.mask {
-    align-items: center;
-    width: 1920px;
-    height: 1080px;
-    margin: 0 auto;
-    position: absolute;
-    overflow: hidden;
-    top: 0px;
-}
 
 @media (max-width: 1400px) {
 
-    .text-container {
-        left: 5vw;    
-    }
-    
-    .im1_ {
-        width: 360px;
-        height: auto;        
-    }
-
-    .im1 {
-        left: calc(100vw - 360px);      
-    }    
-    
-    .im2_ {
-        width: 347px;
-        height: auto;        
-    }
-
-    .im2 {
-        left: 35vw;
-    }
-
-    .im3_ {
-        width: 360px;
-        height: auto;
-    }
-
-    .im3 {
-        left: 45vw;
+    .back {
+        left: -300px;
     }
 
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1100px) {
 
-    .text-container {
-        font-size: 45px;
-        width: 250px;   
-        top: 37vh;
-        left: 3vw;
+    .back {
+        left: -450px;
     }
 
-    button {        
-        font-size: 25px;        
-        width: 200px;
-        height: 50px;        
-    }
-    
-    .im1_ {
-        width: 290px;
-        height: auto;        
+    .text_2 {
+        display: block;
     }
 
-    .im1 {
-        left: calc(100vw - 290px);      
-    }    
-    
-    .im2_ {
-        width: 280px;
-        height: auto;        
-    }
-
-    .im2 {
-        top: 29vh;
-    }
-
-    .im3_ {
-        width: 290px;
-        height: auto;
-    }
-
-    .im3 {
-        top: 59vh;
+    .text2 {
+        display: none;
     }
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
 
-    header {
-        height: 100px;
+    .back {
+        left: -550px;
     }
-    
-    .logo { 
-        padding-left: 80px;
+
+    .text-container {
+        top: 65vh; 
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .back_ {
+        width: 1000px;
+        height: auto;
+    }
+
+    .back {
+        left: -330px;
+        top: 0;
     }
 
     .logo_ { 
+        width: 100px;
+        height: auto;
+    }
+
+    .logo { 
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+    
+    .kut_ {
         width: 200px;
         height: auto;
     }
 
-    .text-container {
-        font-size: 45px;
-        width: 370px;   
-        top: 15vh;
-        left: 3vw;
-        padding: 0;
-        left: 0;
+    header {
+        height: 90px;
     }
 
-    button {        
-        font-size: 25px;        
-        width: 200px;
-        height: 50px;   
-        top: 330px;     
-    }
-    
-    .im1_ {
-        width: 200px;
-        height: auto;        
+    .text-container { 
+        top: 70vh; 
     }
 
-    .im1 {
-        left: calc(100vw - 200px);   
-        top: 35vh;   
-    }    
-    
-    .im2_ {
-        width: 200px;
-        height: auto;        
-    }
-
-    .im2 {
-        top: 36vh;
-        left: 5vw;
-    }
-
-    .im3_ {
-        width: 200px;
+    .text1_ {
+        width: 250px;
         height: auto;
     }
 
-    .im3 {
-        top: 56vh;
-        left: 15vw;
+    .text_2_ {
+        width: 350px;
+        height: auto;
+    }
+
+    .text_2 {
+        top: 65px;
     }
 
     .image-grid {
         grid-template-columns: 1fr;
-        gap: 10px;
         top: 90vh;
     }
 
-    .mask {
-        width: 373px;
-        height: 2080px;
-    }
-
-        .back {
-        padding-left: 0;
-        left: 0;
-        margin: 0;
-    }
-
 }
+
