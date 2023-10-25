@@ -45,22 +45,29 @@ body {
     z-index: 0;
 }
 
-.text-container {
+.backk {
+    background-color: #000;
+    opacity: 0;
     z-index: 1;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+
+.text-container {
+    z-index: 2;
     position: absolute;
     left: 0;    
     top: 75vh; 
 }
 
 .text2 {
-    z-index: 1;
     position: absolute;
     left: 0;    
     top: 90px;
 }
 
 .text_2 {
-    z-index: 2;
     position: absolute;
     left: 0;   
     top: 90px;
