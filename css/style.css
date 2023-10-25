@@ -143,7 +143,7 @@ body {
 
     .back {
         left: -330px;
-        top: 0;
+        top: -100px;
     }
 
     .logo_ { 
@@ -185,7 +185,7 @@ body {
 
     .image-grid {
         grid-template-columns: 1fr;
-        top: 90vh;
+        top: 100vh;
     }
 
 }
