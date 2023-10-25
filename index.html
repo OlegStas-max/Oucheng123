@@ -6,6 +6,12 @@
     <title>Анімація шапки</title>
     <link rel="stylesheet" href="css/style.css">
 <body>
+    <style>
+        #elementToChange {
+          opacity: 0;
+          transition: opacity 0.5s;
+        }
+      </style>
     <header></header> 
 
     <div class="text-container">
@@ -26,6 +32,7 @@
     <div class="kut">
         <img src="images/kut.svg" alt="logo" class="kut_"  width="300px"; height="auto">
     </div>  
+    <div  class="backk" id="elementToChange"></div>
     <div  class="back">
         <img src="images/back.jpg" alt="back"  class="back_">
     </div>
@@ -74,5 +81,22 @@
             <img src="images/14.jpg" alt="Im 14">
         </div>
     </div>
+    <script>
+        var elementToChange = document.getElementById('elementToChange');
+        function changeOpacity(a) {
+            elementToChange.style.opacity = a;
+            window.removeEventListener('scroll', changeOpacity);
+        }
+        window.addEventListener('scroll', function() {
+            var windowHeight = window.innerHeight;
+            var scrollPosition = window.scrollY;
+            var middleOfWindow = (windowHeight / 5) * 4;
+            if (scrollPosition >= middleOfWindow) {
+                changeOpacity("0.8");
+            }else{
+                changeOpacity("0");
+            }
+        });
+      </script>
 </body>
 </html>
