@@ -276,7 +276,7 @@ button:hover {
 @media (max-width: 768px) {
 
     header {
-        height: 85px;
+        height: 88px;
     }
     
     .logo_ { 
@@ -311,24 +311,24 @@ button:hover {
         font-size: 25px;
         width: 250px;
         height: 60px;
-        top: 360px;
+        top: 390px;
     }
 
     .im1 {
         left: -50px;
-        top:30vh;
+        top:32vh;
         animation: slide-in1_ 1s ease-out 0.6s forwards;
     }
     
     .im2 {
         left: 50px;
-        top: 36vh;
+        top: 38vh;
         animation: slide-in1_ 1s ease-out 0.6s forwards;
     }
     
     .im3 {
         left: 150px;
-        top: 42vh;
+        top: 44vh;
         animation: slide-in2_ 1s ease-out 0.6s forwards;
     }
 
@@ -349,7 +349,7 @@ button:hover {
 
     .image-grid {
         grid-template-columns: 1fr;
-        top: 100vh;
+        top: 95vh;
         gap: 10px;
     }
 }
