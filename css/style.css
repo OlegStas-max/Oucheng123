@@ -308,11 +308,11 @@ button:hover {
 
     .text-container {
         left: calc(50vw - 140px);   
-        top: 70vh;  
+        top: 68vh;  
     }
 
     .im1 {
-        left: -60px;
+        left: -75px;
         top: 1vh;
     }
     
@@ -323,7 +323,7 @@ button:hover {
     
     .im3 {
         left: 24vw;
-        top: -55px;
+        top: -65px;
     }
 
     .im1_ {
