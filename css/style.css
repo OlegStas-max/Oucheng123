@@ -1,6 +1,6 @@
 header {
-    background-color: rgb(132, 177, 69, 0.7);
-    height: 130px;
+    background-color: rgb(255, 255, 255, 0.7);
+    height: 100px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -12,96 +12,45 @@ header {
     left: 0; 
 }
 
-.logo { 
-    padding-top: 0px;
-    padding-left: 0px;
+.logo_ { 
+    padding-left: 30px;
     left: 0px;
     z-index: 1001;
     position: fixed;
 }
 
-.kut {
-    z-index: 0;
-    margin: 0;
-    padding: 0;
-    top: 0;   
-    left: calc(100vw - 310px); 
-    position: fixed;
-}
-
-.shap1 {
+.shap {
     font-family:'Montserrat', sans-serif; 
-    font-size: 40px; 
-    color: #fff; 
-    padding: 170px; 
+    font-size: 20px; 
+    color: #000; 
+    padding: 200px; 
+}
+
+.shap1, .shap2 {
     margin: 0;
 }
 
-.text-container {
-    font-family: 'Vazirmatn', sans-serif;
-    z-index: 3;
-    top: 35vh;
-    position: absolute;
-    left: 10vw;    
-    text-align: left;
-    font-weight: 600;
-    color: #000;    
-}
-
-.text1 {  
-    padding: 0;
+.back {
+    padding-left: 0;
+    left: 0;
     margin: 0;
-    width: 400px;
-    font-size: 50px;
-    animation: slide-in3 1s ease-out 0.6s forwards;
-    opacity: 0;
+    top: 0px;
+    position: fixed;
+    z-index: 0;
 }
-
-.text2 {        
-    padding: 0;
-    margin: 0;    
-    width: 400px;
-    font-size: 40px;
-    animation: slide-in3 1s ease-out 0.3s forwards;
-    opacity: 0;
-}
-
-button {
-    font-family: 'Vazirmatn', sans-serif;
-    background-color: #2F6439;
-    color: #fff;
-    font-size: 30px;
-    font-weight: bold;
-    cursor: pointer;
-    border: 2px solid #fff;
-    border-radius: 35px;
-    width: 350px;
-    height: 70px;
-    top: 70px;
-    text-align: center;
-    z-index: 4;
-    position: relative;
-    animation: slide-in3 1s ease-out 0.0s forwards;
-    opacity: 0;
-}
-
-button:hover {
-    background-color: #fff;
-    border: 2px solid #2F6439;
-    color: #2F6439;
-}
-
 
 .im1 {
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    animation: slide-in1 1s ease-out 0.6s forwards;
+    animation: slide-in1 1s ease-out 0.4s forwards;
     opacity: 0;
-    z-index: 1;
+    z-index: 3;
     left: 35vw;
-    top: 20vh;
+    top: 32vh;
+    height: 500px;
+    width: 370px;
 }
 
 .im2 {
@@ -109,11 +58,13 @@ button:hover {
     justify-content: center;
     align-items: center;
     position: absolute;
-    left: 50vw;
-    top: 31vh;
-    animation: slide-in1 1s ease-out 0.7s forwards;
+    left: 55vw;
+    top: 25vh;
+    animation: slide-in2 1s ease-out 0.8s forwards;
     opacity: 0;
     z-index: 2;
+    height: 500px;
+    width: 370px;
 }
 
 .im3 {
@@ -121,16 +72,58 @@ button:hover {
     justify-content: center;
     align-items: center;
     position: absolute;
-    left: 65vw;
-    top: 42vh;
-    animation: slide-in2 1s ease-out 0.8s forwards;
+    left: 75vw;
+    top: 15vh;
+    animation: slide-in1 1s ease-out 1.2s forwards;
     opacity: 0;
-    z-index: 3;
+    z-index: 1;
+    height: 500px;
+    width: 370px;
+}
+
+.text-container {    
+    top: 40vh;
+    position: absolute;
+    left: 10%;    
+}
+
+.text1 {            
+    animation: slide-in 1s ease-in-out 0.0s forwards;
+    opacity: 0;
+    z-index: 4;
+    position: relative;
+}
+
+.text2 { 
+    animation: slide-in 1s ease-in-out 0.2s forwards;
+    opacity: 0;
+    left: 50px;
+    top: -20px;
+    z-index: 5;
+    position: relative;
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0.0);
+    cursor: pointer;
+    width: 250px;
+    height: 50px;
+    top: -83px;
+    left: 100px;
+    z-index: 6;
+    position: relative;
+    border: 0px;
+    border-radius: 35px;
+    animation: slide-in_ 1s ease-in-out 0.2s forwards;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.4);;
 }
 
 @keyframes slide-in1 {
     0% {
-        transform: translate(200px, 25px) scale(0.5);
+        transform: translateY(-50px);
         opacity: 0;
     }
     100% {
@@ -140,7 +133,7 @@ button:hover {
 
 @keyframes slide-in2 {
     0% {
-        transform: translate(200px, 10px) scale(0.5);
+        transform: translateY(50px);
         opacity: 0;
     }
     100% {
@@ -148,42 +141,48 @@ button:hover {
     }
 }
 
-@keyframes slide-in1_ {
+@keyframes slide-in {
     0% {
-        transform: translate(200px, 10px) scale(0.5);
+        transform: translate(0px, 500px);
         opacity: 0;
     }
+
+    50% {
+        transform: translate(0px, -30px);
+        opacity: 1;
+    }
+
     100% {
+        transform: translate(0px, 0);
         opacity: 1;
     }
 }
 
-@keyframes slide-in2_ {
+@keyframes slide-in_ {
     0% {
-        transform: translate(200px, -15px) scale(0.5);
+        transform: translate(-50px, 500px);
         opacity: 0;
     }
+
+    50% {
+        transform: translate(-50px, -30px);
+        opacity: 1;
+    }
+
     100% {
+        transform: translate(-50px, 0) rotate(-4deg);
         opacity: 1;
     }
 }
 
-@keyframes slide-in3 {
-    0% {
-        transform: translate(0, -40px);
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
+
 
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     position: absolute;
-    top: 1000px;
+    top: 100vh;
     left: 0;
     right: 0;
     max-width: 80%;
@@ -198,7 +197,7 @@ button:hover {
     max-height: 100%;
     overflow: hidden;
     width: auto;
-    border: 2px solid #2F6439;
+    border: 2px solid #A2401D;
     cursor: pointer;
 }
 
@@ -208,10 +207,20 @@ button:hover {
     display: block;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1450px) {
 
     .text-container {
         left: 5vw;     
+    }
+
+    .text1_ {            
+        width: 280px;
+        height: auto;
+    }
+    
+    .text2_ { 
+        width: 200px;
+        height: auto;
     }
 
     .im1 {
@@ -219,132 +228,106 @@ button:hover {
     }
     
     .im2 {
-        left: 45vw;
+        left: 50vw;
     }
     
     .im3 {
-        left: 60vw;
+        left: 70vw;
+    }
+
+    .im1_ {
+        width: 247px;
+        height: auto;
+    }
+    
+    .im2_ {
+        width: 348px;
+        height: auto;
+    }
+    
+    .im3_ {
+        width: 302px;
+        height: auto;
     }
 }
 
-@media (max-width: 1150px) {
-
-    .text1 {  
-        width: 300px;
-        font-size: 35px;
-    }
-    
-    .text2 {        
-        width: 300px;
-        font-size: 25px;
-    }
-
-    button {
-        font-size: 25px;
-        width: 250px;
-        height: 60px;
-    }
-
-    .im1 {
-        left: 28vw;
-    }
-    
-    .im2 {
-        left: 43vw;
-    }
-    
-    .im3 {
-        left: 58vw;
-    }
-
-    .im1_ {        
-        height: 300px;
-        width: auto;
-    }
-    
-    .im2_ {        
-        height: 300px;
-        width: auto;
-    }
-    
-    .im3_ {        
-        height: 300px;
-        width: auto;
-    }
-}
-
-@media (max-width: 768px) {
-
-    header {
-        height: 88px;
-    }
-    
-    .logo_ { 
-        width: 95px;
-    }
-    
-    .shap1 {
-        font-size: 25px; 
-        padding: 100px; 
-    }
-
-    .kut {
-        left: calc(100vw - 150px); 
-    }
+@media (max-width: 1100px) {
 
     .text-container {
-        left: 5vw;    
-        top: 15vh; 
-    }
-
-    .text1 {  
-        width: 300px;
-        font-size: 33px;
-    }
-    
-    .text2 {        
-        width: 300px;
-        font-size: 25px;
-    }
-
-    button {
-        font-size: 25px;
-        width: 250px;
-        height: 60px;
-        top: 390px;
+        left: calc(50vw - 140px);   
+        top: 60vh;  
     }
 
     .im1 {
         left: -50px;
-        top:32vh;
-        animation: slide-in1_ 1s ease-out 0.6s forwards;
+        top: 11vh;
     }
     
     .im2 {
-        left: 50px;
-        top: 38vh;
-        animation: slide-in1_ 1s ease-out 0.6s forwards;
+        left: 22vw;
+        top: 7vh;
     }
     
     .im3 {
-        left: 150px;
-        top: 44vh;
-        animation: slide-in2_ 1s ease-out 0.6s forwards;
+        left: 52vw;
+        top: 1vh;
+    }
+}
+
+@media (max-width: 600px) {
+
+    header {
+        height: 70px;
     }
 
-    .im1_ {        
-        height: 200px;
-        width: auto;
+    .logo_ { 
+        width: 100px;
+        height: auto;
+        padding-left: 20px;
+    }
+
+    .shap {
+        font-size: 15px; 
+        padding: 150px; 
+    }
+
+    .shap1, .shap2 {
+        width: 160px;
+    }
+
+    .text-container {
+        left: calc(50vw - 150px);   
+        top: 55vh;  
+    }
+
+    .im1 {
+        left: -80px;
+        top: 3vh;
     }
     
-    .im2_ {        
-        height: 200px;
-        width: auto;
+    .im2 {
+        left: 22vw;
+        top: 15vh;
     }
     
-    .im3_ {        
-        height: 200px;
-        width: auto;
+    .im3 {
+        left: 22vw;
+        top: -60px;
+    }
+
+    .im1_ {
+        width: 186px;
+        height: auto;
+    }
+    
+    .im2_ {
+        width: 261px;
+        height: auto;
+    }
+    
+    .im3_ {
+        width: 227px;
+        height: auto;
     }
 
     .image-grid {
