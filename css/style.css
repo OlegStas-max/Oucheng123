@@ -207,6 +207,16 @@ button:hover {
     display: block;
 }
 
+.mask {
+    align-items: center;
+    width: 1920px;
+    height: 1080px;
+    margin: 0 auto;
+    position: absolute;
+    overflow: hidden;
+    top: 0px;
+}
+
 @media (max-width: 1450px) {
 
     .text-container {
@@ -297,7 +307,7 @@ button:hover {
 
     .text-container {
         left: calc(50vw - 150px);   
-        top: 55vh;  
+        top: 70vh;  
     }
 
     .im1 {
@@ -312,7 +322,7 @@ button:hover {
     
     .im3 {
         left: 22vw;
-        top: -60px;
+        top: -30px;
     }
 
     .im1_ {
@@ -334,5 +344,10 @@ button:hover {
         grid-template-columns: 1fr;
         top: 95vh;
         gap: 10px;
+    }
+
+    .mask {
+        width: 373px;
+        height: 1080px;
     }
 }
