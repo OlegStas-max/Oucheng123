@@ -297,7 +297,7 @@ button:hover {
     }
 
     .shap {
-        font-size: 15px; 
+        font-size: 18px; 
         padding: 150px; 
     }
 
@@ -311,17 +311,17 @@ button:hover {
     }
 
     .im1 {
-        left: -80px;
+        left: -50px;
         top: 3vh;
     }
     
     .im2 {
-        left: 22vw;
+        left: 24vw;
         top: 15vh;
     }
     
     .im3 {
-        left: 22vw;
+        left: 24vw;
         top: -30px;
     }
 
