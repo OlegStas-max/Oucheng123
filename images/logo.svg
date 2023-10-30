@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2018 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="11.5069mm" height="11.5068mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 21825 21825"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:none}
+    .fil2 {fill:#FEFEFE}
+    .fil1 {fill:#2AA83E}
+   ]]>
+  </style>
+   <clipPath id="id0">
+    <path d="M10912 0c6027,0 10913,4886 10913,10912 0,6027 -4886,10912 -10913,10912 -6027,0 -10912,-4886 -10912,-10912 0,-6027 4886,-10912 10912,-10912z"/>
+   </clipPath>
+    <clipPath id="id1">
+     <path d="M10912 0c6027,0 10913,4886 10913,10912 0,6027 -4886,10912 -10913,10912 -6027,0 -10912,-4886 -10912,-10912 0,-6027 4886,-10912 10912,-10912z"/>
+    </clipPath>
+    <clipPath id="id2">
+     <path d="M10912 0c6027,0 10913,4886 10913,10912 0,6027 -4886,10912 -10913,10912 -6027,0 -10912,-4886 -10912,-10912 0,-6027 4886,-10912 10912,-10912z"/>
+    </clipPath>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g>
+  </g>
+  <g style="clip-path:url(#id0)">
+   <g>
+   </g>
+   <g style="clip-path:url(#id1)">
+    <image x="-389" y="-848" width="23027" height="23299" xlink:href="logo_Images\logo_ImgID1.png"/>
+   </g>
+   <g style="clip-path:url(#id2)">
+   </g>
+  </g>
+  <path class="fil0" d="M10912 0c6027,0 10913,4886 10913,10912 0,6027 -4886,10912 -10913,10912 -6027,0 -10912,-4886 -10912,-10912 0,-6027 4886,-10912 10912,-10912z"/>
+  <circle class="fil1" cx="10913" cy="10913" r="10334"/>
+  <path class="fil2" d="M5617 13732c-1175,-4238 1799,-7279 5245,-7457 3034,-156 6298,1607 7198,4784 -408,-3494 -3354,-6204 -6929,-6204 -3853,0 -6977,3150 -6977,7035 0,3886 3124,7035 6977,7035 3854,0 6977,-3150 6977,-7035 -147,2509 -1652,4081 -4719,4574 -556,-1849 -703,-3288 601,-3120 466,60 935,34 1240,-368l1105 -1454c399,-525 56,-775 -1066,-795 -326,-6 -480,-215 -582,-523 -1007,-3070 -5767,-3292 -7016,-10 1842,-2097 4211,-2438 6066,-649l-8121 4186zm8363 -2590l-1676 310c838,-954 1505,-997 1676,-310z"/>
+ </g>
+</svg>
