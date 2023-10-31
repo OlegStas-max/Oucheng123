@@ -352,4 +352,10 @@ button:hover {
         width: 373px;
         height: 1080px;
     }
+
+    button {
+        width: 197px;
+        height: 40px;
+        top: -72px;
+    }
 }
