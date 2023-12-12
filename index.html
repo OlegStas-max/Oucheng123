@@ -1,109 +1,65 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solar power banks</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <header>
-        <img src="images/logo.svg" alt="logo" class="logo_" width="150px"; height="auto">
-        <div class="shap">
-            <p class="shap1">Shenzhen Qianling</p>
-            <p class="shap2">E-Commerce Co., Ltd</p>
-        </div>
-    </header> 
-
-    <div  class="mask">
-      <div  class="back">
-          <img src="images/back.jpg" alt="back"  class="back_">
-      </div>
-      <div class="im1">
-          <img src="images/1_.png" alt="im" class="im1_">
-      </div>
-      <div class="im2">
-          <img src="images/2_.png" alt="im" class="im2_">
-      </div>
-      <div class="im3">
-          <img src="images/3_.png" alt="im" class="im3_">
-      </div>
-    </div>
-
-    <div class="text-container">
-        <div class="text1">
-            <img src="images/1.svg" alt="txt" class="text1_" width="350px"; height="auto">
-        </div>
-       <div class="text2">
-            <img src="images/2.svg" alt="txt" class="text2_" width="250px"; height="auto">
-       </div>  
-       <button  class="animate-button"></button>
-    </div>
-
-    <div class="image-grid">
-        <div class="image animate-im1">
-            <img src="images/1.jpg" alt="Im 1" >
-        </div>
-        <div class="image animate-im2">
-            <img src="images/2.jpg" alt="Im 2">
-        </div>
-        <div class="image animate-im3">
-            <img src="images/3.jpg" alt="Im 3">
-        </div>
-        <div class="image animate-im4">
-            <img src="images/4.jpg" alt="Im 4" >
-        </div>
-        <div class="image animate-im5">
-            <img src="images/5.jpg" alt="Im 5">
-        </div>
-        <div class="image animate-im6">
-            <img src="images/6.jpg" alt="Im 6">
-        </div>
-        <div class="image animate-im7">
-           <img src="images/7.jpg" alt="Im 7" >
-        </div>
-        <div class="image animate-im8">
-            <img src="images/8.jpg" alt="Im 8">
-        </div>
-        <div class="image animate-im9">
-            <img src="images/9.jpg" alt="Im 9">
-        </div>
-        <div class="image animate-im10">
-            <img src="images/10.jpg" alt="Im 10" >
-        </div>
-        <div class="image animate-im11">
-            <img src="images/11.jpg" alt="Im 11">
-        </div>
-        <div class="image animate-im12">
-            <img src="images/12.jpg" alt="Im 12">
-        </div>
-        <div class="image animate-im13">
-            <img src="images/13.jpg" alt="Im 13">
-        </div>
-        <div class="image animate-im14">
-            <img src="images/14.jpg" alt="Im 14">
-        </div>
-        <div class="image animate-im15">
-            <img src="images/15.jpg" alt="Im 15">
-        </div>
-        <div class="image animate-im16">
-            <img src="images/16.jpg" alt="Im 16">
-        </div>
-        <div class="image animate-im17">
-            <img src="images/17.jpg" alt="Im 17">
-        </div>
-        <div class="image animate-im18">
-            <img src="images/18.jpg" alt="Im 18">
-        </div>
-        <div class="image animate-im19">
-            <img src="images/19.jpg" alt="Im 19">
-        </div>
-        <div class="image animate-im20">
-            <img src="images/20.jpg" alt="Im 20">
-        </div>
-    </div>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+	<div class="container z-depth-2">		
+		<div style="margin: 100px; padding: 100px">
+			<input type="text" id="datePickerInput" class="datepicker" placeholder="Виберіть дату переносу ембріонів">
+			  <select id="fgr">
+				<option value="" disabled selected>Виберіть стадію розвитку ембріонів</option>
+				<option value="1 день">1 день</option>
+				<option value="2 дні">2 дні</option>	
+				<option value="3 дні">3 дні</option>	
+				<option value="4 дні">4 дні</option>	
+				<option value="5 днів">5 днів</option>	
+				<option value="6 днів">6 днів</option>	
+			  </select>  
+			<div class="row input-con"  style="padding-top: 15px">
+			  <form action="#">
+				  <label  style="padding-right: 15px">
+					<input class="with-gap" name="group" type="radio" value="Одноплідна вагістність" id="op1"/>
+					<span>Одноплідна вагістність</span>
+				  </label>
+				  <label>
+					<input class="with-gap" name="group" type="radio" value="Багатоплідна вагістність" id="op2"/>
+					<span>Багатоплідна вагістність</span>
+				  </label>
+			  </form>
+			</div>
+			<a class="waves-effect waves-light btn" style="width: 100%" id="btn">Порахувати</a>
+		</div>
+	</div>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script>
+		var elems = document.querySelectorAll('select');
+        var instances = M.FormSelect.init(elems)
+		var thisDay = new Date();
+		thisDay.setHours(0);
+		thisDay.setMinutes(0);
+		thisDay.setSeconds(0);
+		thisDay.setMilliseconds(0);
+		var datePicker = M.Datepicker.init(datePickerInput, {
+		  setDefaultDate: true,
+		  format: "dd mmmm yyyy",
+		  showClearBtn: true,
+		  firstDay: 1,
+		  i18n: {
+			months: ['Січня', 'Лютого', 'Березня', 'Квітня', 'Травня', 'Червня', 'Липня', 'Серпня', 'Вересня', 'Жовтня', 'Листопада', 'Грудня'],
+			monthsShort: ['Січ', 'Лют', 'Бер', 'Кві', 'Тра', 'Чер', 'Лип', 'Сер', 'Вер', 'Жов', 'Лис', 'Гру'],
+			weekdays: ['Неділя', 'Понеділок', 'Вівторок', 'Середа', 'Четвер', 'П"ятниця', 'Субота'],
+			weekdaysShort: ['Нд', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+			weekdaysAbbrev: ['Н', 'П', 'В', 'С', 'Ч', 'П', 'С'],
+			clear: 'Очистити',
+			cancel: 'Відмінити'
+		  }
+		});
+  	</script>
 </body>
 </html>
