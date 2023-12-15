@@ -3,287 +3,440 @@
 <head>
 <meta charset="utf-8">
 <title>Untitled Document</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	<style>
-		.cont{
-			margin: 20px; 
+				
+		body, html {
+			height: 100%;
+			margin: 0;
+			display: flex;
+			justify-content: center;
+/*			align-items: center;			*/
+		  }
+
+		  .container {
+			  position: absolute;
+			box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+			width: calc(100vw / 2);
+			margin: 100px; 
 			padding-top: 100px;
 			padding-bottom: 100px;
+		  }
+		
+		.cont{			
 			padding-left: 100px;
 			padding-right: 100px;
+			padding-top: 10px;
+			padding-bottom: 10px;
 		 }
+		
+		.Picker{
+			width: calc(100% - 3px);
+			height: 30px;
+			border: none;
+        	border: 2px solid #897048;
+			font-family:'Montserrat', sans-serif;
+			font-size: 16px;
+			border-radius: 5px;			
+		 }
+		
+		.Picker1{
+			width: 100%;
+			height: 33px;
+			border: none;
+        	border: 2px solid #897048;
+			font-family:'Montserrat', sans-serif;
+			font-size: 16px;
+			border-radius: 5px;
+		 }
+		
+		.row{
+			width: 100%;
+			height: 33px;
+			font-family:'Montserrat', sans-serif;
+			font-size: 16px;
+			padding-top: 15px
+		 }
+		
+		input[type='radio']:after {
+			width: 20px;
+			height: 20px;
+			border-radius: 15px;
+			top: 0px;
+			left: 0px;
+			position: relative;
+			content: '';
+			display: inline-block;
+			visibility: visible;
+		}
+
+		input[type='radio']:checked:after {
+			width: 7px;
+			height: 7px;
+			border-radius: 15px;
+			top: -2px;
+			left: 2.5px;
+			position: relative;
+			background-color: #897048;
+			content: '';
+			display: inline-block;
+			visibility: visible;
+		}
+		
+		.btn {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			height: 33px;
+			background-color: #897048;
+			color: white;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 16px;
+			line-height: 33px;
+			cursor: pointer;
+			border-radius: 5px;
+		  }
+		
+		.txt {
+			padding-top: 15px; 
+			padding-bottom: 15px;
+		  }
+		
+		.txt1 {
+			font-family: 'Montserrat', sans-serif;
+			font-size: 25px; 
+			font-weight: bold; 
+			color: #897048; 
+			text-align: center; 
+			margin: 0px;
+			padding-top: 5px; 
+			padding-bottom: 5px;
+		  }
+		
+		.txt2 {
+			font-family: 'Montserrat', sans-serif;
+			font-size: 18px; 
+			color: #000; 
+			text-align: center; 
+			margin: 0px;
+			padding-top: 5px; 
+			padding-bottom: 5px;
+		  }
+		
+
 		@media (max-width: 768px){
+			.container {
+				width: calc((100vw / 10)*9);
+			  }
 			.cont{
-				padding-top: 100px;
-				padding-bottom: 100px;
 				padding-left: 10px;
 				padding-right: 10px;
 			 }
 		}
+
 	</style>
 </head>
 <body>
 	
-	<div class="container z-depth-2">		
+	<div class="container">		
 		<div class="cont">
-			<input type="text" id="datePickerInput" class="datepicker" placeholder="Виберіть дату переносу ембріонів">
-			  <select id="fgr">
-				<option value="Виберіть стадію розвитку ембріонів" disabled selected>Виберіть стадію розвитку ембріонів</option>
-				<option value="1">1 день</option>
-				<option value="2">2 дні</option>	
-				<option value="3">3 дні</option>	
-				<option value="4">4 дні</option>	
-				<option value="5">5 днів</option>	
-				<option value="6">6 днів</option>	
-			  </select>  
-			<div class="row input-con"  style="padding-top: 15px">
-			  <form action="#">
-				  <label  style="padding-right: 15px">
-					<input class="with-gap" name="group" type="radio" value="Одноплідна вагістність" id="op1"/>
-					<span>Одноплідна вагістність</span>
-				  </label>
-				  <label>
-					<input class="with-gap" name="group" type="radio" value="Багатоплідна вагістність" id="op2"/>
-					<span>Багатоплідна вагістність</span>
-				  </label>
-			  </form>
-			</div>
-			<a class="waves-effect waves-light btn" style="width: 100%" id="btn">Порахувати</a>
-			<div id="c1" style="padding-top: 15px; padding-bottom: 15px">
-				<p id="cc1" style="font-size: 25px; font-weight: bold; color: #4db6ac; text-align: center; margin: 0px"></p>
-				<p id="cc2" style="color: #bdbdbd; text-align: center; margin: 0px"></p>
-			</div>
-			<div id="d1" style="padding-top: 15px; padding-bottom: 15px">
-				<p id="dd1" style="font-size: 25px; font-weight: bold; color: #4db6ac; text-align: center; margin: 0px"></p>
-				<p id="dd2" style="color: #bdbdbd; text-align: center; margin: 0px"></p>
-			</div>
-			<div id="e1" style="padding-top: 15px; padding-bottom: 15px">
-				<p id="ee1" style="font-size: 25px; font-weight: bold; color: #4db6ac; text-align: center; margin: 0px"></p>
-				<p id="ee2" style="color: #bdbdbd; text-align: center; margin: 0px"></p>
-			</div>
-			<div id="f1" style="padding-top: 15px; padding-bottom: 15px">
-				<p id="ff1" style="font-size: 25px; font-weight: bold; color: #4db6ac; text-align: center; margin: 0px"></p>
-				<p id="ff2" style="color: #bdbdbd; text-align: center; margin: 0px"></p>
-			</div>
-			<div id="g1" style="padding-top: 15px; padding-bottom: 15px">
-				<p id="gg1" style="font-size: 25px; font-weight: bold; color: #4db6ac; text-align: center; margin: 0px"></p>
-				<p id="gg2" style="color: #bdbdbd; text-align: center; margin: 0px"></p>
-			</div>
-			<div id="h1" style="padding-top: 15px; padding-bottom: 15px">
-				<p id="hh1" style="font-size: 25px; font-weight: bold; color: #4db6ac; text-align: center; margin: 0px"></p>
-				<p id="hh2" style="color: #bdbdbd; text-align: center; margin: 0px"></p>
-			</div>
-			<div id="j1" style="padding-top: 15px; padding-bottom: 15px">
-				<p id="jj1" style="font-size: 25px; font-weight: bold; color: #4db6ac; text-align: center; margin: 0px"></p>
-				<p id="jj2" style="color: #bdbdbd; text-align: center; margin: 0px"></p>
-			</div>
-			<div id="i1" style="padding-top: 15px; padding-bottom: 15px">
-				<p id="ii1" style="font-size: 25px; font-weight: bold; color: #4db6ac; text-align: center; margin: 0px"></p>
-				<p id="ii2" style="color: #bdbdbd; text-align: center; margin: 0px"></p>
-			</div>
-			<div id="k1" style="padding-top: 15px; padding-bottom: 15px">
-				<p id="kk1" style="font-size: 25px; font-weight: bold; color: #4db6ac; text-align: center; margin: 0px"></p>
-				<p id="kk2" style="color: #bdbdbd; text-align: center; margin: 0px"></p>
-			</div>
-			<div id="l1" style="padding-top: 15px; padding-bottom: 15px">
-				<p id="ll1" style="font-size: 25px; font-weight: bold; color: #4db6ac; text-align: center; margin: 0px"></p>
-				<p id="ll2" style="color: #bdbdbd; text-align: center; margin: 0px"></p>
+			<p  style="color: #897048; font-family: 'Montserrat', sans-serif; font-size: 12px;">Виберіть дату переносу ембріонів</p>
+			<input type="date" id="Picker" class="Picker">
+		</div>
+		<div class="cont">
+			<p style="color: #897048; font-family: 'Montserrat', sans-serif; font-size: 12px;">Виберіть стадію розвитку ембріонів</p>
+		  <select id="fgr"  class="Picker1">
+			<option value="Виберіть стадію розвитку ембріонів" disabled selected></option>
+			<option value="1">1 день</option>
+			<option value="2">2 дні</option>	
+			<option value="3">3 дні</option>	
+			<option value="4">4 дні</option>	
+			<option value="5">5 днів</option>	
+			<option value="6">6 днів</option>	
+		  </select> 
+		</div>
+		<div class="cont">
+			<div class="row">
+			  <label  style="padding-right: 15px;">
+				<input name="group" type="radio" value="Одноплідна вагістність" id="op1"/>
+				<span>Одноплідна вагістність</span>
+			  </label>
+			  <label>
+				<input name="group" type="radio" value="Багатоплідна вагістність" id="op2"/>
+				<span>Багатоплідна вагістність</span>
+			  </label>
 			</div>
 		</div>
+		<div class="cont">
+			<a class="btn" id="btn">Порахувати</a>
+		</div>
+		<div id="con" class="cont">
+<!--
+			<div id="c1" style="padding-top: 15px; padding-bottom: 15px">
+				<p id="cc1" style="font-size: 28px; font-weight: bold; color: #4db6ac; text-align: center; margin: 0px"></p>
+				<p id="cc2" style="font-size: 18px; color: #bdbdbd; text-align: center; margin: 0px"></p>
+			</div>
+-->
+			<div id="d1" class="txt">
+				<p id="dd1" class="txt1"></p>
+				<p id="dd2" class="txt2"></p>
+			</div>
+			<div id="d21" class="txt">
+				<p id="dd21" class="txt1"></p>
+				<p id="dd22" class="txt2"></p>
+			</div>
+			<div id="d31" class="txt">
+				<p id="dd31" class="txt1"></p>
+				<p id="dd32" class="txt2"></p>
+			</div>
+			<div id="e1" class="txt">
+				<p id="ee1" class="txt1"></p>
+				<p id="ee2" class="txt2"></p>
+			</div>
+			<div id="f1" class="txt">
+				<p id="ff1" class="txt1"></p>
+				<p id="ff2" class="txt2"></p>
+			</div>
+			<div id="g1" class="txt">
+				<p id="gg1" class="txt1"></p>
+				<p id="gg2" class="txt2"></p>
+			</div>
+			<div id="h1"  class="txt">
+				<p id="hh1" class="txt1"></p>
+				<p id="hh2" class="txt2"></p>
+			</div>
+			<div id="j1" class="txt">
+				<p id="jj1" class="txt1"></p>
+				<p id="jj2" class="txt2"></p>
+			</div>
+			<div id="i1" class="txt">
+				<p id="ii1" class="txt1"></p>
+				<p id="ii2" class="txt2"></p>
+			</div>
+			<div id="k1" class="txt">
+				<p id="kk1" class="txt1"></p>
+				<p id="kk2" class="txt2"></p>
+			</div>
+			<div id="l1" class="txt">
+				<p id="ll1" class="txt1"></p>
+				<p id="ll2" class="txt2"></p>
+			</div>
+		</div>
+		
+		<div id="mpopupBox" style="display: none; position: fixed; z-index: 1; padding-top: 100px; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgb(0,0,0); background-color: rgba(0,0,0,0.4);">
+		  <div style="position: relative; background-color: #fff; margin: auto; padding: 0; width: 350px; -webkit-animation-name: animatetop; -webkit-animation-duration: 0.4s; animation-name: animatetop; animation-duration: 0.4s; border-radius: 0.3rem;">
+			<div style="padding: 2px 12px; background-color: #ffffff; color: #333;">
+				<h6 id="povidomlennya" style="font-family: 'Montserrat', sans-serif; font-size: 16px;"></h6>
+			</div>
+
+			<div style="padding: 1rem;">
+			  <button type="button" class="btn" id="butt">Повернутись і виправити</button>
+			</div>
+		  </div>
+		</div>
+		
 	</div>
-	<div id="mpopupBox" style="display: none; position: fixed; z-index: 1; padding-top: 100px; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgb(0,0,0); background-color: rgba(0,0,0,0.4);">
-      <div style="position: relative; background-color: #fff; margin: auto; padding: 0; width: 350px; box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19); -webkit-animation-name: animatetop; -webkit-animation-duration: 0.4s; animation-name: animatetop; animation-duration: 0.4s; border-radius: 0.3rem;">
-        <div style="padding: 2px 12px; background-color: #ffffff; color: #333; border-bottom: 1px solid #e9ecef; border-top-left-radius: 0.3rem; border-top-right-radius: 0.3rem;">
-            <h6 id="povidomlennya" style="font-size: 1rem; margin-top: 14px; margin-bottom: 14px;"></h6>
-        </div>
-
-        <div style="padding: 1rem; background-color: #ffffff; color: #333; border-top: 1px solid #e9ecef; border-bottom-left-radius: 0.3rem; border-bottom-right-radius: 0.3rem; text-align: right;">
-          <button type="button" class="btn btn-primary" id="butt">Повернутись і виправити</button>
-        </div>
-      </div>
-    </div>
 	
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+	
 	<script>
-		var mpopup = document.getElementById('mpopupBox');
 		
-		var m = document.getElementById("butt");
-		m.onclick = function() {
-			mpopup.style.display = "none";        
-		};
+		document.addEventListener('DOMContentLoaded', function() {
+			
+			var mpopup = document.getElementById('mpopupBox');
+			
+//			document.getElementById('con').style.display = "block"
 
-		window.onclick = function(event) {
-			if (event.target == mpopup) {
-				mpopup.style.display = "none";
+			var m = document.getElementById("butt");
+			m.onclick = function() {
+				mpopup.style.display = "none";        
+			};
+
+			window.onclick = function(event) {
+				if (event.target == mpopup) {
+					mpopup.style.display = "none";
+				}
+			};
+
+
+			document.getElementById("btn").addEventListener("click", function () {    
+				
+			if(document.getElementById("Picker").value == ""){
+				document.getElementById("povidomlennya").innerHTML = "Виберіть дату переносу ембріонів!"
+				mpopup.style.display = "block";
+				return
 			}
-		};
-		
-		var elems = document.querySelectorAll('select');
-        var instances = M.FormSelect.init(elems)
-		var thisDay = new Date();
-		thisDay.setHours(0);
-		thisDay.setMinutes(0);
-		thisDay.setSeconds(0);
-		thisDay.setMilliseconds(0);
-		var datePicker = M.Datepicker.init(datePickerInput, {
-		  setDefaultDate: true,
-		  format: "dd mmmm yyyy",
-		  showClearBtn: true,
-		  firstDay: 1,
-		  i18n: {
-			months: ['Січня', 'Лютого', 'Березня', 'Квітня', 'Травня', 'Червня', 'Липня', 'Серпня', 'Вересня', 'Жовтня', 'Листопада', 'Грудня'],
-			monthsShort: ['Січ', 'Лют', 'Бер', 'Кві', 'Тра', 'Чер', 'Лип', 'Сер', 'Вер', 'Жов', 'Лис', 'Гру'],
-			weekdays: ['Неділя', 'Понеділок', 'Вівторок', 'Середа', 'Четвер', 'П"ятниця', 'Субота'],
-			weekdaysShort: ['Нд', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
-			weekdaysAbbrev: ['Н', 'П', 'В', 'С', 'Ч', 'П', 'С'],
-			clear: 'Очистити',
-			cancel: 'Відмінити'
-		  }
-		});
-		
-		document.getElementById("btn").addEventListener("click", function () {              
-		if(document.getElementById("datePickerInput").value == ""){
-			document.getElementById("povidomlennya").innerHTML = "Заповніть поле 'Виберіть дату переносу ембріонів'!"
-			mpopup.style.display = "block";
-			return
-		}
-		if(document.getElementById("fgr").options[0].selected == true){
-			document.getElementById("povidomlennya").innerHTML = "Заповніть поле 'Виберіть стадію розвитку ембріонів'!"
-			mpopup.style.display = "block";
-			return
-		}
-		if(document.getElementById("op1").checked == false && document.getElementById("op2").checked == false){
-			document.getElementById("povidomlennya").innerHTML = "Вкажіть, Одноплідну чи Багатоплідну вагітність!"
-			mpopup.style.display = "block";
-			return
-		}
-		var selectedValues = 0
-		for (var i = 0; i < document.getElementById("fgr").options.length; i++) {
-			if (document.getElementById("fgr").options[i].selected && document.getElementById("fgr").options[i].value != "Виберіть стадію розвитку ембріонів") {
-			  selectedValues = document.getElementById("fgr").options[i].value;
+			if(document.getElementById("fgr").options[0].selected == true){
+				document.getElementById("povidomlennya").innerHTML = "Виберіть стадію розвитку ембріонів!"
+				mpopup.style.display = "block";
+				return
 			}
-		  }
-		var chislo = document.getElementById("datePickerInput").value;
-		var months = ['Січня', 'Лютого', 'Березня', 'Квітня', 'Травня', 'Червня', 'Липня', 'Серпня', 'Вересня', 'Жовтня', 'Листопада', 'Грудня'];
-		var dateParts = chislo.split(' ');
-		var day = parseInt(dateParts[0], 10);
-		var month = months.indexOf(dateParts[1]);
-		var year = parseInt(dateParts[2], 10);
-		var date = new Date(year, month, day);
-		date.setDate(date.getDate() - selectedValues - 14);
-			
-		var formattedDate = date.getDate() + ' ' + months[date.getMonth()] + ' ' + date.getFullYear();
-		document.getElementById("cc1").innerHTML = formattedDate;
-		document.getElementById("cc2").innerHTML = "День фактичного запліднення"
-			
-		document.getElementById("dd1").innerHTML = document.getElementById("datePickerInput").value;
-		document.getElementById("dd2").innerHTML = "День переносу ембріонів"
-		
-		var date1 = new Date(year, month, day);
-		var date2 = new Date(year, month, day);
-		date1.setDate(date1.getDate() + 10);
-		date2.setDate(date2.getDate() + 14);
-		
-		if(months[date1.getMonth()] != months[date2.getMonth()]){
-			formattedDate = date1.getDate() + " - " + months[date1.getMonth()] + " - "  + date2.getDate() + ' ' + months[date2.getMonth()] + ' ' + date2.getFullYear();			
-		}else{
-			formattedDate = date1.getDate() + " - " + date2.getDate() + ' ' + months[date2.getMonth()] + ' ' + date2.getFullYear();
-		}
-		
-		document.getElementById("ee1").innerHTML = formattedDate;
-		document.getElementById("ee2").innerHTML = "Тестування крові на ХГЛ"
-			
-		var date3 = new Date(year, month, day);
-		date3.setDate(date3.getDate() + 21);
-		formattedDate = date3.getDate() + ' ' + months[date3.getMonth()] + ' ' + date3.getFullYear();
+			if(document.getElementById("op1").checked == false && document.getElementById("op2").checked == false){
+				document.getElementById("povidomlennya").innerHTML = "Вкажіть, Одноплідна чи Багатоплідна вагітність!"
+				mpopup.style.display = "block";
+				return
+			}
+			var selectedValues = 0
+			for (var i = 0; i < document.getElementById("fgr").options.length; i++) {
+				if (document.getElementById("fgr").options[i].selected && document.getElementById("fgr").options[i].value != "Виберіть стадію розвитку ембріонів") {
+				  selectedValues = document.getElementById("fgr").options[i].value;
+				}
+			  }
+			var chislo = document.getElementById("Picker").value;
+			var months = ['Січня', 'Лютого', 'Березня', 'Квітня', 'Травня', 'Червня', 'Липня', 'Серпня', 'Вересня', 'Жовтня', 'Листопада', 'Грудня'];
+			var dateParts = chislo.split('-');
+			var year = parseInt(dateParts[0], 10);
+			var month = parseInt(dateParts[1], 10);
+			var day = parseInt(dateParts[2], 10);
+			var date = new Date(year, month - 1, day);			
+	
+			var formattedDate = date.getDate() + ' ' + months[date.getMonth()] + ' ' + date.getFullYear();
+
+			document.getElementById("dd1").innerHTML = formattedDate
+			document.getElementById("dd2").innerHTML = "День переносу ембріонів"
 			
 			
-		document.getElementById("ff1").innerHTML = formattedDate;
-		document.getElementById("ff2").innerHTML = "Перше УЗД"
-			
-		var date4 = new Date(year, month, day);
-		date4.setDate(date4.getDate() + 35);
-		formattedDate = date4.getDate() + ' ' + months[date4.getMonth()] + ' ' + date4.getFullYear();
-			
-			
-		document.getElementById("gg1").innerHTML = formattedDate;
-		document.getElementById("gg2").innerHTML = "Серцебиття"
-			
-		var date5 = new Date(year, month, day);
-		var date6 = new Date(year, month, day);
-		date5.setDate(date5.getDate() + 77 - 14);
-		date6.setDate(date6.getDate() + 98 - 14);
-			
-		if(months[date5.getMonth()] != months[date6.getMonth()]){
-			formattedDate = date5.getDate() + ' ' + months[date5.getMonth()] + " - " + date6.getDate() + ' ' + months[date6.getMonth()] + ' ' + date6.getFullYear();			
-		}else{
-			formattedDate = date5.getDate() + " - " + date6.getDate() + ' ' + months[date6.getMonth()] + ' ' + date6.getFullYear();
-		}
-			
-		document.getElementById("hh1").innerHTML = formattedDate;
-		document.getElementById("hh2").innerHTML = "1-й Скринінг плода"
-			
-		var date7 = new Date(year, month, day);
-		var date8 = new Date(year, month, day);
-		date7.setDate(date7.getDate() + 126 - 14);
-		date8.setDate(date8.getDate() + 147 - 14);
-			
-		if(months[date7.getMonth()] != months[date8.getMonth()]){
-			formattedDate = date7.getDate() + ' ' + months[date7.getMonth()] + " - " + date8.getDate() + ' ' + months[date8.getMonth()] + ' ' + date8.getFullYear();		
-		}else{
-			formattedDate = date7.getDate() + " - " + date8.getDate() + ' ' + months[date8.getMonth()] + ' ' + date8.getFullYear();
-		}
-			
-		document.getElementById("jj1").innerHTML = formattedDate;
-		document.getElementById("jj2").innerHTML = "2-й Скринінг плода"
-			
-		var date9 = new Date(year, month, day);
-		date9.setDate(date9.getDate() + 210 - 14);
-		formattedDate = date9.getDate() + ' ' + months[date9.getMonth()] + ' ' + date9.getFullYear();
-			
-			
-		document.getElementById("ii1").innerHTML = formattedDate;
-		document.getElementById("ii2").innerHTML = "Контрольне УЗД"
-			
-		var date10 = new Date(year, month, day);
-		var date10_ = new Date(year, month, day);
-			
-		if(document.getElementById("op1").checked){
-			date10.setDate(date10.getDate() + 280 - 14);
-		    formattedDate = date10.getDate() + ' ' + months[date10.getMonth()] + ' ' + date10.getFullYear();
-		}else{
-			date10.setDate(date10.getDate() + 280 - 14 - 14);
-			date10_.setDate(date10_.getDate() + 280 - 7 - 14);
-			if(months[date10.getMonth()] != months[date10_.getMonth()]){
-				formattedDate = date10.getDate() + ' ' + months[date10.getMonth()] + " - " + date10_.getDate() + ' ' + months[date10_.getMonth()] + ' ' + date10_.getFullYear();		
+			date.setDate(date.getDate() - selectedValues - 14);
+				console.log(date)
+
+			var nyni = new Date()
+			var difference = Math.floor((nyni.getTime() - date.getTime()) / (1000 * 3600 * 24))
+			var tyjden = difference % 7
+
+			formattedDate = (difference - tyjden)/7
+
+			if(tyjden == 0){
+				document.getElementById("dd21").innerHTML = formattedDate + " тижд. (" + (formattedDate + 1) + "-й тижд.)"
+				document.getElementById("dd31").innerHTML = (formattedDate - 2) + " тижд. (" + ((formattedDate - 2) + 1) + "-й тижд.)"
 			}else{
-				formattedDate = date10.getDate() + " - " + date10_.getDate() + ' ' + months[date10_.getMonth()] + ' ' + date10_.getFullYear();		
+				document.getElementById("dd21").innerHTML = formattedDate + " тижд. + " + tyjden + " дн. (" + (formattedDate + 1) + "-й тижд.)"
+				document.getElementById("dd31").innerHTML = (formattedDate - 2) + " тижд. + " + tyjden + " дн. (" + ((formattedDate - 2) + 1) + "-й тижд.)"
 			}
-			
-		}		
-			
-			
-		document.getElementById("kk1").innerHTML = formattedDate;
-		document.getElementById("kk2").innerHTML = "Найбільш вірогідна дата пологів"
-			
-		
-		var date11 = new Date(year, month, day);
-		var date12 = new Date(year, month, day);
-		date11.setDate(date11.getDate() + 266 - 14);
-		date12.setDate(date12.getDate() + 294 - 14);
-			
-		if(months[date11.getMonth()] != months[date12.getMonth()]){
-			formattedDate = date11.getDate() + ' ' + months[date11.getMonth()] + " - " + date12.getDate() + ' ' + months[date12.getMonth()] + ' ' + date12.getFullYear();		
-		}else{
-			formattedDate = date11.getDate() + " - " + date12.getDate() + ' ' + months[date12.getMonth()] + ' ' + date12.getFullYear();	
-		}
-			
-		document.getElementById("ll1").innerHTML = formattedDate;
-		document.getElementById("ll2").innerHTML = "ПДП"
-		
+			document.getElementById("dd22").innerHTML = "Акушерський термін вагітності"
+			document.getElementById("dd32").innerHTML = "Ембріональний вік плоду"
+
+			var date1 = new Date(year, month - 1, day);
+			var date2 = new Date(year, month - 1, day);
+			date1.setDate(date1.getDate() + 10);
+			date2.setDate(date2.getDate() + 14);
+
+			if(months[date1.getMonth()] != months[date2.getMonth()]){
+				formattedDate = date1.getDate() + " - " + months[date1.getMonth()] + " - "  + date2.getDate() + ' ' + months[date2.getMonth()] + ' ' + date2.getFullYear();			
+			}else{
+				formattedDate = date1.getDate() + " - " + date2.getDate() + ' ' + months[date2.getMonth()] + ' ' + date2.getFullYear();
+			}
+
+			document.getElementById("ee1").innerHTML = formattedDate;
+			document.getElementById("ee2").innerHTML = "Тестування крові на ХГЛ"
+
+			var date3 = new Date(year, month - 1, day);
+			date3.setDate(date3.getDate() + 21);
+			formattedDate = date3.getDate() + ' ' + months[date3.getMonth()] + ' ' + date3.getFullYear();
+
+
+			document.getElementById("ff1").innerHTML = formattedDate;
+			document.getElementById("ff2").innerHTML = "УЗД. Наявність плідного яйця в порожнині матки. Ембріональний вік плоду - 3 тижні"
+
+			var date4 = new Date(year, month - 1, day);
+			var date4_ = new Date(year, month - 1, day);
+			date4.setDate(date4.getDate() + 35);
+			date4_.setDate(date4_.getDate() + 42);
+
+			if(months[date4.getMonth()] != months[date4_.getMonth()]){
+				formattedDate = date4.getDate() + " - " + months[date4.getMonth()] + " - "  + date4_.getDate() + ' ' + months[date4_.getMonth()] + ' ' + date4_.getFullYear();			
+			}else{
+				formattedDate = date4.getDate() + " - " + date4_.getDate() + ' ' + months[date4_.getMonth()] + ' ' + date4_.getFullYear();
+			}			
+
+			document.getElementById("gg1").innerHTML = formattedDate;
+			document.getElementById("gg2").innerHTML = "УЗД на наявність серцебиття ембріону. 7-8 акушерських тижнів."
+
+			var date5 = new Date(year, month - 1, day);
+			var date6 = new Date(year, month - 1, day);
+			date5.setDate(date5.getDate() + 77 - 14);
+			date6.setDate(date6.getDate() + 98 - 14);
+
+			if(months[date5.getMonth()] != months[date6.getMonth()]){
+				formattedDate = date5.getDate() + ' ' + months[date5.getMonth()] + " - " + date6.getDate() + ' ' + months[date6.getMonth()] + ' ' + date6.getFullYear();			
+			}else{
+				formattedDate = date5.getDate() + " - " + date6.getDate() + ' ' + months[date6.getMonth()] + ' ' + date6.getFullYear();
+			}
+
+			document.getElementById("hh1").innerHTML = formattedDate;
+			document.getElementById("hh2").innerHTML = "11 - 14 акушерських тижнів.  Скринінг Іго триместру. Експертне УЗД + кров.  Оптимально виконувати в інтервалі 11,5 - 13 тижнів"
+
+			var date7 = new Date(year, month - 1, day);
+			var date8 = new Date(year, month - 1, day);
+			date7.setDate(date7.getDate() + 126 - 14);
+			date8.setDate(date8.getDate() + 147 - 14);
+
+			if(months[date7.getMonth()] != months[date8.getMonth()]){
+				formattedDate = date7.getDate() + ' ' + months[date7.getMonth()] + " - " + date8.getDate() + ' ' + months[date8.getMonth()] + ' ' + date8.getFullYear();		
+			}else{
+				formattedDate = date7.getDate() + " - " + date8.getDate() + ' ' + months[date8.getMonth()] + ' ' + date8.getFullYear();
+			}
+
+			document.getElementById("jj1").innerHTML = formattedDate;
+			document.getElementById("jj2").innerHTML = "17-19 акушерських тижнів. Скринінг ІIго триместру.  Експертне УЗД. Оптимально виконувати до 18 акушерських тижнів"
+
+			var date9 = new Date(year, month - 1, day);
+			var date9_ = new Date(year, month - 1, day);
+			date9.setDate(date9.getDate() + 210 - 14);
+			date9_.setDate(date9_.getDate() + 210);
+
+			if(months[date9.getMonth()] != months[date9_.getMonth()]){
+				formattedDate = date9.getDate() + " - " + months[date9.getMonth()] + " - "  + date9_.getDate() + ' ' + months[date9_.getMonth()] + ' ' + date9_.getFullYear();			
+			}else{
+				formattedDate = date9.getDate() + " - " + date9_.getDate() + ' ' + months[date9_.getMonth()] + ' ' + date9_.getFullYear();
+			}
+
+			var date9 = new Date(year, month - 1, day);
+			date9.setDate(date9.getDate() + 210 - 14);
+			formattedDate = date9.getDate() + ' ' + months[date9.getMonth()] + ' ' + date9.getFullYear();
+
+
+			document.getElementById("ii1").innerHTML = formattedDate;
+			document.getElementById("ii2").innerHTML = "Експертне УЗД ІІIго триместру. 30 - 32 тижні"
+
+			var date10 = new Date(year, month - 1, day);
+			var date10_ = new Date(year, month - 1, day);
+
+			if(document.getElementById("op1").checked){
+				date10.setDate(date10.getDate() + 280 - 14);
+				formattedDate = date10.getDate() + ' ' + months[date10.getMonth()] + ' ' + date10.getFullYear();
+			}else{
+				date10.setDate(date10.getDate() + 280 - 14 - 14);
+				date10_.setDate(date10_.getDate() + 280 - 7 - 14);
+				if(months[date10.getMonth()] != months[date10_.getMonth()]){
+					formattedDate = date10.getDate() + ' ' + months[date10.getMonth()] + " - " + date10_.getDate() + ' ' + months[date10_.getMonth()] + ' ' + date10_.getFullYear();		
+				}else{
+					formattedDate = date10.getDate() + " - " + date10_.getDate() + ' ' + months[date10_.getMonth()] + ' ' + date10_.getFullYear();		
+				}
+
+			}		
+
+
+			document.getElementById("kk1").innerHTML = formattedDate;
+			document.getElementById("kk2").innerHTML = "Найбільш вірогідна дата пологів. 40 тижнів"
+
+
+			var date11 = new Date(year, month - 1, day);
+			var date12 = new Date(year, month - 1, day);
+			date11.setDate(date11.getDate() + 266 - 14);
+			date12.setDate(date12.getDate() + 294 - 14);
+
+			if(months[date11.getMonth()] != months[date12.getMonth()]){
+				formattedDate = date11.getDate() + ' ' + months[date11.getMonth()] + " - " + date12.getDate() + ' ' + months[date12.getMonth()] + ' ' + date12.getFullYear();		
+			}else{
+				formattedDate = date11.getDate() + " - " + date12.getDate() + ' ' + months[date12.getMonth()] + ' ' + date12.getFullYear();	
+			}
+
+			document.getElementById("ll1").innerHTML = formattedDate;
+			document.getElementById("ll2").innerHTML = "Передбачувана дата пологів. 38-42 тижні"
+		})
 	  })
   	</script>
 </body>
