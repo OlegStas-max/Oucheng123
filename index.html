@@ -389,19 +389,14 @@
 
 			var date9 = new Date(year, month - 1, day);
 			var date9_ = new Date(year, month - 1, day);
-			date9.setDate(date9.getDate() + 210 - 14);
-			date9_.setDate(date9_.getDate() + 210);
+			date9.setDate(date9.getDate() + 203 - 14);
+			date9_.setDate(date9_.getDate() + 217 - 14);
 
 			if(months[date9.getMonth()] != months[date9_.getMonth()]){
 				formattedDate = date9.getDate() + " - " + months[date9.getMonth()] + " - "  + date9_.getDate() + ' ' + months[date9_.getMonth()] + ' ' + date9_.getFullYear();			
 			}else{
 				formattedDate = date9.getDate() + " - " + date9_.getDate() + ' ' + months[date9_.getMonth()] + ' ' + date9_.getFullYear();
 			}
-
-			var date9 = new Date(year, month - 1, day);
-			date9.setDate(date9.getDate() + 210 - 14);
-			formattedDate = date9.getDate() + ' ' + months[date9.getMonth()] + ' ' + date9.getFullYear();
-
 
 			document.getElementById("ii1").innerHTML = formattedDate;
 			document.getElementById("ii2").innerHTML = "Експертне УЗД ІІIго триместру. 30 - 32 тижні"
