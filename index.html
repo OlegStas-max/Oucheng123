@@ -405,11 +405,11 @@
 			var date10_ = new Date(year, month - 1, day);
 
 			if(document.getElementById("op1").checked){
-				date10.setDate(date10.getDate() + 280 - 14);
+				date10.setDate(date10.getDate() + 273 - 14);
 				formattedDate = date10.getDate() + ' ' + months[date10.getMonth()] + ' ' + date10.getFullYear();
 			}else{
-				date10.setDate(date10.getDate() + 280 - 14 - 14);
-				date10_.setDate(date10_.getDate() + 280 - 7 - 14);
+				date10.setDate(date10.getDate() + 273 - 14 - 14);
+				date10_.setDate(date10_.getDate() + 273 - 7 - 14);
 				if(months[date10.getMonth()] != months[date10_.getMonth()]){
 					formattedDate = date10.getDate() + ' ' + months[date10.getMonth()] + " - " + date10_.getDate() + ' ' + months[date10_.getMonth()] + ' ' + date10_.getFullYear();		
 				}else{
@@ -425,8 +425,8 @@
 
 			var date11 = new Date(year, month - 1, day);
 			var date12 = new Date(year, month - 1, day);
-			date11.setDate(date11.getDate() + 266 - 14);
-			date12.setDate(date12.getDate() + 294 - 14);
+			date11.setDate(date11.getDate() + 259 - 14);
+			date12.setDate(date12.getDate() + 287 - 14);
 
 			if(months[date11.getMonth()] != months[date12.getMonth()]){
 				formattedDate = date11.getDate() + ' ' + months[date11.getMonth()] + " - " + date12.getDate() + ' ' + months[date12.getMonth()] + ' ' + date12.getFullYear();		
