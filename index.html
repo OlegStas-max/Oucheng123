@@ -20,7 +20,7 @@
 		  .container {
 			  position: absolute;
 			box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-			width: calc(100vw / 2);
+			width: 70%;
 			margin: 100px; 
 			padding-top: 100px;
 			padding-bottom: 100px;
@@ -58,8 +58,10 @@
 			height: 33px;
 			font-family:'Montserrat', sans-serif;
 			font-size: 16px;
-			padding-top: 15px
-		 }
+			padding-top: 15px;
+			display: flex;
+            flex-direction: row;
+		}
 		
 		input[type='radio']:after {
 			width: 20px;
@@ -133,9 +135,12 @@
 				width: calc((100vw / 10)*9);
 			  }
 			.cont{
-				padding-left: 10px;
-				padding-right: 10px;
+				padding-left: 20px;
+				padding-right: 20px;
 			 }
+			.row{
+				flex-direction: column;
+			}
 		}
 
 	</style>
@@ -174,7 +179,7 @@
 		<div class="cont">
 			<a class="btn" id="btn">Порахувати</a>
 		</div>
-		<div id="con" class="cont">
+		<div id="con" class="cont" style="display: none">
 <!--
 			<div id="c1" style="padding-top: 15px; padding-bottom: 15px">
 				<p id="cc1" style="font-size: 28px; font-weight: bold; color: #4db6ac; text-align: center; margin: 0px"></p>
@@ -247,8 +252,6 @@
 		document.addEventListener('DOMContentLoaded', function() {
 			
 			var mpopup = document.getElementById('mpopupBox');
-			
-//			document.getElementById('con').style.display = "block"
 
 			var m = document.getElementById("butt");
 			m.onclick = function() {
@@ -263,6 +266,8 @@
 
 
 			document.getElementById("btn").addEventListener("click", function () {    
+				
+			document.getElementById('con').style.display = "block"
 				
 			if(document.getElementById("Picker").value == ""){
 				document.getElementById("povidomlennya").innerHTML = "Виберіть дату переносу ембріонів!"
@@ -342,8 +347,8 @@
 
 			var date4 = new Date(year, month - 1, day);
 			var date4_ = new Date(year, month - 1, day);
-			date4.setDate(date4.getDate() + 35);
-			date4_.setDate(date4_.getDate() + 42);
+			date4.setDate(date4.getDate() + 28);
+			date4_.setDate(date4_.getDate() + 35);
 
 			if(months[date4.getMonth()] != months[date4_.getMonth()]){
 				formattedDate = date4.getDate() + " - " + months[date4.getMonth()] + " - "  + date4_.getDate() + ' ' + months[date4_.getMonth()] + ' ' + date4_.getFullYear();			
